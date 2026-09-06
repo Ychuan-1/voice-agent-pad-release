@@ -3,7 +3,7 @@ const featureState = {
   revision: null, request: null, history: [], draftTimer: null,
   pendingInsertion: null, live: null, booted: false,
   cancelRequested: false, canceling: false, pasteBusy: false,
-  editorInstalled: true, aiInstalling: false
+  editorInstalled: true, aiInstalling: false, aiExtensionSource: null
 };
 const element = (id) => document.getElementById(id);
 
@@ -66,7 +66,8 @@ function updateFeatureControls() {
   for (const button of document.querySelectorAll('[data-expression]')) {
     button.disabled = busy || (button.dataset.expression !== 'original' && !featureState.editorInstalled);
   }
-  element('downloadAiExtension').disabled = busy || featureState.aiInstalling || !element('aiExtensionUrl').value.trim();
+  const hasAiSource = !!(element('aiExtensionUrl').value.trim() || featureState.aiExtensionSource?.url);
+  element('downloadAiExtension').disabled = busy || featureState.aiInstalling || !hasAiSource;
   element('installLocalAiExtension').disabled = busy || featureState.aiInstalling;
   element('cancelAiExtension').hidden = !featureState.aiInstalling;
 }
@@ -335,6 +336,7 @@ function renderHistory() {
 async function refreshFeatureStatus() {
   const status = await api.featureStatus();
   featureState.editorInstalled = !!status.installed;
+  renderAiExtensionSource(status);
   element('editorStatus').textContent = status.installed
     ? status.model + (status.running ? ' · 已加载' : ' · 按需加载')
     : 'AI 整理扩展未安装；轻量版可先用原文，安装扩展后启用日常/条理/中译英';
@@ -354,6 +356,27 @@ function setAiExtensionStatus(text, type = 'ready') {
   const status = element('aiExtensionStatus');
   status.textContent = text || '';
   status.classList.toggle('error-text', type === 'error');
+}
+
+function renderAiExtensionSource(status) {
+  const source = status.aiExtensionSource || featureState.aiExtensionSource || {};
+  featureState.aiExtensionSource = source;
+  const installed = !!status.installed;
+  element('aiExtensionName').textContent = source.name || 'AI 整理扩展';
+  element('aiExtensionSummary').textContent = source.summary || '安装后启用本地日常整理、条理整理、中文转英文。';
+  element('aiExtensionVersion').textContent = source.version ? `版本 ${source.version}` : '版本随主包更新';
+  element('aiExtensionSize').textContent = source.size ? `约 ${formatBytes(source.size)}` : '大小待获取';
+  element('aiExtensionEngine').textContent = source.engine || '本地 CPU';
+  element('aiExtensionBadge').textContent = installed ? '已安装' : '可选下载';
+  element('downloadAiExtension').textContent = installed ? '重新下载扩展' : '下载 AI 扩展';
+  const tags = element('aiExtensionFeatures');
+  tags.replaceChildren();
+  for (const feature of source.features || ['日常整理', '条理整理', '中文转英文']) {
+    const tag = document.createElement('span');
+    tag.textContent = feature;
+    tags.append(tag);
+  }
+  if (!element('aiExtensionUrl').value.trim() && source.url) element('aiExtensionUrl').value = source.url;
 }
 
 async function runAiExtensionInstall(operation) {
@@ -400,7 +423,8 @@ async function initFeatures() {
     await refreshFeatureStatus();
   });
   element('downloadAiExtension').addEventListener('click', () => {
-    void runAiExtensionInstall(() => api.downloadAiExtension(element('aiExtensionUrl').value.trim()));
+    const manualUrl = element('aiExtensionUrl').value.trim();
+    void runAiExtensionInstall(() => api.downloadAiExtension(manualUrl || featureState.aiExtensionSource?.url || ''));
   });
   element('installLocalAiExtension').addEventListener('click', () => {
     void runAiExtensionInstall(() => api.installLocalAiExtension());

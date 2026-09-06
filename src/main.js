@@ -18,6 +18,18 @@ const { NativeLiveInput, LiveInputSession } = require('./live-input');
 const { RecordingHud } = require('./recording-hud');
 
 const APP_NAME = 'Voice Agent Pad';
+const RELEASE_VERSION = '0.2.0-beta.6';
+const RELEASE_BASE_URL = `https://github.com/Ychuan-1/voice-agent-pad-release/releases/download/v${RELEASE_VERSION}`;
+const AI_EXTENSION_SOURCE = {
+  id: 'qwen3-local-editor',
+  name: 'AI 整理扩展',
+  version: RELEASE_VERSION,
+  url: `${RELEASE_BASE_URL}/VoiceAgentPad-${RELEASE_VERSION}-ai-extension-win-x64.zip`,
+  size: 1778031239,
+  summary: '补充本地日常整理、条理整理、中文转英文。默认不装，按需一键下载。',
+  engine: 'Qwen3 1.7B Q8 + llama.cpp CPU',
+  features: ['日常整理', '条理整理', '中文转英文', '离线运行']
+};
 const COMPACT_SIZE = { width: 116, height: 116 };
 const EXPANDED_SIZE = { width: 700, height: 410 };
 const SETTINGS_SIZE = { width: 620, height: 560 };
@@ -93,10 +105,19 @@ const defaultSettings = {
   liveInputMode: 'compatible',
   autoHideAfterPaste: false,
   launchAtLogin: false,
-  aiExtensionUrl: '',
+  aiExtensionUrl: AI_EXTENSION_SOURCE.url,
   saveHistory: true,
   maxHistoryItems: 200
 };
+
+function normalizeAiExtensionUrl(value) {
+  const clean = String(value || '').trim();
+  if (!clean) return AI_EXTENSION_SOURCE.url;
+  if (/^https:\/\/github\.com\/Ychuan-1\/voice-agent-pad-release\/releases\/download\/v0\.2\.0-beta\.\d+\/VoiceAgentPad-0\.2\.0-beta\.\d+-ai-extension-win-x64\.zip$/i.test(clean)) {
+    return AI_EXTENSION_SOURCE.url;
+  }
+  return clean;
+}
 
 const gotSingleInstanceLock = app.requestSingleInstanceLock();
 if (!gotSingleInstanceLock) {
@@ -119,6 +140,7 @@ async function writeJson(fileName, value) {
 
 async function loadSettings() {
   settings = normalizeFeatures({ ...defaultSettings, ...(await readJson('settings.json', {})) });
+  settings.aiExtensionUrl = normalizeAiExtensionUrl(settings.aiExtensionUrl);
   if (BUNDLED_RUNTIME) Object.assign(settings, { bundledRuntime: true, localPythonPath: BUNDLED_PYTHON, localEngine: 'paraformer', localDevice: 'cpu' });
   settings.language = normalizeLanguageSetting(settings.language);
   settings.inputMethod = normalizeInputMethod(settings.inputMethod);
@@ -133,6 +155,7 @@ async function saveSettings(nextSettings) {
   next.language = normalizeLanguageSetting(next.language);
   next.inputMethod = normalizeInputMethod(next.inputMethod);
   next.launchAtLogin = !!next.launchAtLogin;
+  next.aiExtensionUrl = normalizeAiExtensionUrl(next.aiExtensionUrl);
   applyLaunchAtLogin(next.launchAtLogin);
   next.launchAtLogin = readLaunchAtLogin(next.launchAtLogin);
   await writeJson('settings.json', next);
@@ -1307,7 +1330,12 @@ ipcMain.handle('app:save-draft', async (_event, draft) => {
 });
 ipcMain.handle('app:process-text', (_event, payload) => processText(payload));
 ipcMain.handle('app:cancel-processing', (_event, id) => { editingJobs.get(String(id))?.abort(); return { ok: true }; });
-ipcMain.handle('app:feature-status', () => ({ ...editor.status(), asrRunning: !!streamingClient?.child, standbyMode: settings.standbyMode }));
+ipcMain.handle('app:feature-status', () => ({
+  ...editor.status(),
+  asrRunning: !!streamingClient?.child,
+  standbyMode: settings.standbyMode,
+  aiExtensionSource: AI_EXTENSION_SOURCE
+}));
 ipcMain.handle('app:release-models', () => ({ ok: releaseIdleModels(true) }));
 ipcMain.handle('ai-extension:download-install', (_event, url) => downloadAndInstallAiExtension(url));
 ipcMain.handle('ai-extension:install-local', async () => {

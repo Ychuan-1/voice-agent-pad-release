@@ -243,16 +243,32 @@
           <div data-settings-view="text" hidden>
             <label>默认表达<select id="expressionMode"><option value="original">原文</option><option value="daily">日常整理</option><option value="organized">条理整理</option></select></label>
             <div class="resource-row ai-extension-row"><span id="editorStatus"></span><button id="openAppFolder" class="tool-icon" type="button" title="打开程序目录" aria-label="打开程序目录"><i data-lucide="folder-open"></i></button></div>
-            <label>
-              AI 扩展国内源链接
-              <input id="aiExtensionUrl" type="url" placeholder="https://国内源域名/.../VoiceAgentPad-ai-extension.zip">
-            </label>
-            <div class="ai-extension-actions">
-              <button id="downloadAiExtension" type="button">下载安装 AI 扩展</button>
-              <button id="installLocalAiExtension" type="button">选择本地 ZIP</button>
-              <button id="cancelAiExtension" type="button" hidden>取消</button>
+            <div class="extension-card">
+              <div class="pack-heading">
+                <h3><i data-lucide="sparkles"></i><span id="aiExtensionName">AI 整理扩展</span></h3>
+                <span id="aiExtensionBadge" class="pack-state">可选下载</span>
+              </div>
+              <p id="aiExtensionSummary" class="pack-summary">安装后启用本地日常整理、条理整理、中文转英文。</p>
+              <div class="pack-meta">
+                <span id="aiExtensionVersion">版本读取中</span>
+                <span id="aiExtensionSize">大小读取中</span>
+                <span id="aiExtensionEngine">本地 CPU</span>
+              </div>
+              <div id="aiExtensionFeatures" class="extension-tags"></div>
+              <div class="ai-extension-actions">
+                <button id="downloadAiExtension" class="primary" type="button">下载 AI 扩展</button>
+                <button id="installLocalAiExtension" type="button">选择本地 ZIP</button>
+                <button id="cancelAiExtension" type="button" hidden>取消</button>
+              </div>
+              <div id="aiExtensionStatus" class="engine-status"></div>
+              <details class="manual-source">
+                <summary>高级：手动下载源</summary>
+                <label>
+                  AI 扩展下载链接
+                  <input id="aiExtensionUrl" type="url" placeholder="https://.../VoiceAgentPad-ai-extension.zip">
+                </label>
+              </details>
             </div>
-            <div id="aiExtensionStatus" class="engine-status"></div>
             <label class="check-row"><input id="cleanupPreview" type="checkbox">整理后预览确认</label>
             <label class="check-row"><input id="formatNumbers" type="checkbox">数字与单位规范化</label>
             <label class="check-row"><input id="formatPunctuation" type="checkbox">基础句末标点</label>

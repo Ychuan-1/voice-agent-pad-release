@@ -2,9 +2,9 @@
 
 一个极简 Windows 悬浮语音输入器，用来把语音快速变成文字，并粘贴到当前正在使用的 Agent、ChatGPT、Codex、Obsidian 或任意输入框里。
 
-## 2026-09-05 可转发内测版
+## 2026-09-06 可转发内测版
 
-`交付包/VoiceAgentPad-0.2.0-beta.5-lite-win-x64.zip` 为默认轻量免安装 Windows x64 包，内置本地 Paraformer、Python、悬浮球、快捷键、通用兼容实时写入、兼容输入降级、历史记录和词包入口。Qwen 本地整理/翻译已改为软件内可选扩展安装：`交付包/VoiceAgentPad-0.2.0-beta.5-ai-extension-win-x64.zip`，支持填写国内源链接或选择本地 ZIP。旧版 `0.2.0-beta.1` 为完整包，约 2.19 GB。详见 `交付包/0.2.0-beta.5-轻量版说明.md`。不含个人资料、旧实验引擎或 Torch；未签名，不承诺所有系统和输入框兼容。开发版继续使用原配置，便携版使用 `%APPDATA%\VoiceAgentPad` 独立资料目录。
+`VoiceAgentPad-0.2.0-beta.6-lite-win-x64.zip` 为默认轻量免安装 Windows x64 包，内置本地 Paraformer、Python、悬浮球、快捷键、通用兼容实时写入、兼容输入降级、历史记录、词包入口和 AI 扩展下载入口。Qwen 本地整理/翻译仍是可选扩展：进入设置 -> 文字，像下载词包一样点“下载 AI 扩展”即可；也可选择本地 ZIP 备用安装。旧版 `0.2.0-beta.1` 为完整包，约 2.19 GB。不含个人资料、旧实验引擎或 Torch；未签名，不承诺所有系统和输入框兼容。开发版继续使用原配置，便携版使用 `%APPDATA%\VoiceAgentPad` 独立资料目录。
 
 构建入口：`npm run release:licenses`、`npm run build:portable:lite`、`npm run build:portable:full`、`npm run build:ai-extension`。脚本从已安装运行环境筛选依赖、验证模型并生成逐文件清单，默认拒绝覆盖已有发行目录。`npm run release:manifest` 仅用于首次发布前重新生成清单，已分发的 ZIP 不应静默覆盖。
 

@@ -661,6 +661,16 @@ button:disabled { opacity: .42; cursor: default; }
 .check-row input { width: 16px; height: 16px; accent-color: var(--accent); }
 .engine-status { font-size: 12px; color: var(--muted); padding: 6px 0 16px; }
 .resource-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 12px; color: var(--muted); }
+.extension-card { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 12px 0 10px; margin-bottom: 12px; }
+.extension-card .pack-heading h3 { font-size: 14px; }
+.extension-card .ai-extension-actions { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+.extension-card .ai-extension-actions button { height: 32px; min-width: 96px; padding: 0 12px; border-radius: 8px; font-size: 12px; }
+.extension-card .engine-status { padding: 8px 0 4px; min-height: 24px; overflow-wrap: anywhere; }
+.extension-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.extension-tags span { padding: 2px 7px; border-radius: 999px; color: #bfe9d2; background: rgba(80, 216, 144, 0.1); border: 1px solid rgba(80, 216, 144, 0.18); font-size: 10px; }
+.manual-source { margin-top: 8px; color: var(--muted); font-size: 11px; }
+.manual-source summary { cursor: pointer; padding: 5px 0; }
+.manual-source label { margin: 5px 0 0; }
 .history-list { margin-top: 12px; }
 .history-text { overflow-wrap: anywhere; max-height: 200px; overflow: auto; }
 .history-actions { justify-content: flex-end; }

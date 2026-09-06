@@ -5,7 +5,7 @@ const { createHash } = require('node:crypto');
 const { execFileSync } = require('node:child_process');
 
 const root = path.resolve(__dirname, '..');
-const version = '0.2.0-beta.5';
+const version = '0.2.0-beta.6';
 const args = new Set(process.argv.slice(2));
 const flavor = args.has('--ai-extension') ? 'ai-extension' : args.has('--lite') ? 'lite' : 'full';
 const includeAiExtension = flavor === 'full' || flavor === 'ai-extension' || args.has('--with-ai');

@@ -58,29 +58,29 @@ jobs:
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force -Path release-out | Out-Null
-          Compress-Archive -LiteralPath "dist\VoiceAgentPad-0.2.0-beta.5-lite-win-x64" -DestinationPath "release-out\VoiceAgentPad-0.2.0-beta.5-lite-win-x64.zip" -Force
-          Compress-Archive -LiteralPath "dist\VoiceAgentPad-0.2.0-beta.5-ai-extension-win-x64" -DestinationPath "release-out\VoiceAgentPad-0.2.0-beta.5-ai-extension-win-x64.zip" -Force
+          Compress-Archive -LiteralPath "dist\VoiceAgentPad-0.2.0-beta.6-lite-win-x64" -DestinationPath "release-out\VoiceAgentPad-0.2.0-beta.6-lite-win-x64.zip" -Force
+          Compress-Archive -LiteralPath "dist\VoiceAgentPad-0.2.0-beta.6-ai-extension-win-x64" -DestinationPath "release-out\VoiceAgentPad-0.2.0-beta.6-ai-extension-win-x64.zip" -Force
           $files = @(
-            "release-out\VoiceAgentPad-0.2.0-beta.5-lite-win-x64.zip",
-            "release-out\VoiceAgentPad-0.2.0-beta.5-ai-extension-win-x64.zip"
+            "release-out\VoiceAgentPad-0.2.0-beta.6-lite-win-x64.zip",
+            "release-out\VoiceAgentPad-0.2.0-beta.6-ai-extension-win-x64.zip"
           )
           $lines = foreach ($file in $files) {
             $hash = (Get-FileHash -LiteralPath $file -Algorithm SHA256).Hash.ToLowerInvariant()
             "$hash  $(Split-Path -Leaf $file)"
           }
-          $lines | Set-Content -LiteralPath "release-out\SHA256SUMS-0.2.0-beta.5.txt" -Encoding utf8
+          $lines | Set-Content -LiteralPath "release-out\SHA256SUMS-0.2.0-beta.6.txt" -Encoding utf8
           Copy-Item -LiteralPath "README.md" -Destination "release-out\README.md"
 
       - name: Publish GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v0.2.0-beta.5
-          name: Voice Agent Pad 0.2.0-beta.5
+          tag_name: v0.2.0-beta.6
+          name: Voice Agent Pad 0.2.0-beta.6
           body_path: README.md
           draft: false
           prerelease: true
           files: |
-            release-out/VoiceAgentPad-0.2.0-beta.5-lite-win-x64.zip
-            release-out/VoiceAgentPad-0.2.0-beta.5-ai-extension-win-x64.zip
-            release-out/SHA256SUMS-0.2.0-beta.5.txt
+            release-out/VoiceAgentPad-0.2.0-beta.6-lite-win-x64.zip
+            release-out/VoiceAgentPad-0.2.0-beta.6-ai-extension-win-x64.zip
+            release-out/SHA256SUMS-0.2.0-beta.6.txt
             release-out/README.md
