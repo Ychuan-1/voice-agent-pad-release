@@ -1,0 +1,47 @@
+{
+  "name": "voice-agent-pad",
+  "version": "0.1.0",
+  "description": "A minimal floating speech-to-agent input pad for Windows.",
+  "main": "src/main.js",
+  "scripts": {
+    "build:portable": "node scripts/build-portable.js",
+    "build:portable:lite": "node scripts/build-portable.js --lite",
+    "build:portable:full": "node scripts/build-portable.js --full",
+    "build:ai-extension": "node scripts/build-portable.js --ai-extension",
+    "release:licenses": "node scripts/fetch-release-licenses.js",
+    "release:manifest": "node scripts/build-portable.js --finalize",
+    "test:live-recording-ui": "node scripts/test-live-recording-ui.js",
+    "test:live-input": "node --test scripts/test-live-input.js",
+    "test:live-input-ui": "node scripts/test-live-input-ui.js",
+    "test:translation-ui": "node scripts/test-translation-ui.js",
+    "test:packs": "node --test scripts/test-dictionary-packs.js",
+    "test:packs-ui": "node scripts/test-packs-ui.js",
+    "test:features": "node --test scripts/test-features.js",
+    "test:product-ui": "node scripts/test-product-ui.js",
+    "test:local-editor": "node scripts/test-local-editor.js",
+    "start": "electron .",
+    "dev": "electron .",
+    "check": "node scripts/check-project.js",
+    "test:streaming-client": "node scripts/test-streaming-client.js",
+    "test:streaming-ui": "node scripts/test-streaming-ui.js"
+  },
+  "keywords": [
+    "voice",
+    "transcription",
+    "agent",
+    "dictation",
+    "electron"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "electron": "^39.2.7"
+  },
+  "dependencies": {
+    "diff": "9.0.0",
+    "lucide": "1.41.0",
+    "nzh": "1.0.14",
+    "opencc-js": "1.4.2"
+  }
+}

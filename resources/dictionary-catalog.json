@@ -1,0 +1,3615 @@
+{
+  "schemaVersion": 1,
+  "packs": [
+    {
+      "id": "daily-core",
+      "name": "日常中文基础",
+      "icon": "languages",
+      "summary": "常用中文词汇、时间、动作与日常表达",
+      "category": "日常",
+      "upstream": {
+        "repository": "iDvel/rime-ice",
+        "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+        "licenseFiles": [
+          "LICENSE"
+        ],
+        "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+        "sourceDirectory": "cn_dicts"
+      },
+      "format": "rime-tsv",
+      "files": [
+        "cn_dicts/base.dict.yaml"
+      ],
+      "sourceCache": true,
+      "limit": 12000,
+      "maxLength": 8,
+      "filter": "今天|明天|昨天|后天|刚才|现在|以后|之前|之后|早上|上午|中午|下午|晚上|时间|小时|分钟|周末|一会儿|待会儿|稍等|正在|已经|还没|从来|一直|经常|偶尔|立刻|马上|提前|推迟|尽快|按时|可以|能够|需要|必须|应该|愿意|希望|想要|打算|准备|决定|知道|了解|明白|记得|忘记|看到|听到|听清|说话|告诉|解释|描述|打开|关闭|开始|结束|停止|继续|暂停|完成|取消|选择|调整|检查|发现|找到|使用|处理|解决|帮助|帮忙|问题|办法|方式|方法|原因|结果|情况|事情|东西|地方|位置|数量|距离|速度|大小|长短|多少|几个|一起|自己|别人|你们|我们|他们|大家|这边|那边|这个|那个|这些|那些|一点|一些|一样|不同|合适|方便|简单|复杂|清楚|正确|错误|不错|不行|不用|不必|别急|没事|没空|有空|聊天|问候|商量|打扰|麻烦|谢谢|抱歉|再见|不好意思|没关系|没问题|请问|稍等|打算|觉得|认为|好像|怎么|什么|为啥|为什么|哪里|哪儿|时候|朋友|同事|家人|亲戚|同学|早安|晚安|早上好|晚上好|原来|其实|不过|但是|所以|然后|要不|或者|反正|至少|毕竟|难怪|确实|大概|估计|可能|说实话|总之|比如|例如|意思|吃饭|点餐|外卖|餐厅|饭店|早餐|午餐|晚餐|夜宵|食堂|菜单|饮品|饮料|咖啡|奶茶|牛奶|酸奶|果汁|面包|蛋糕|饼干|火锅|烧烤|麻辣|米饭|面条|炒饭|炒面|饺子|包子|馒头|馄饨|米线|螺蛳粉|蔬菜|水果|鸡蛋|鸡肉|牛肉|猪肉|羊肉|鱼肉|虾仁|土豆|番茄|西红柿|黄瓜|青菜|豆腐|香菜|葱花|辣椒|花生|过敏|少糖|无糖|去冰|打包|清淡|口味|酱油|食盐|食用油|食材|烹饪|做饭|煮饭|蒸|炖|煎饼|购物|买东西|商品|商家|店铺|超市|便利店|价格|优惠|折扣|满减|促销|运费|包邮|快递|物流|收货|发货|退货|换货|退款|售后|客服|订单|付款|支付|现金|支付宝|微信|发票|小票|尺码|尺寸|颜色|款式|库存|预售|现货|保修|保质期|生产日期|收件|寄件|取件|签收|驿站|快递柜|自提|送货|收货地址|七天无理由|评价|质保|出行|旅游|旅行|通勤|公交|地铁|高铁|动车|火车|飞机|航班|机场|车站|候车|检票|进站|出站|换乘|打车|出租车|网约车|顺风车|拼车|导航|路线|路口|堵车|停车|车位|高速|收费站|机票|车票|订票|退票|改签|座位|靠窗|过道|行李|登机|安检|身份证|酒店|民宿|入住|退房|前台|大床房|双床房|景点|门票|预约|行程|攻略|自驾|步行|骑行|共享单车|交通|出发|到达|到站|居家|家务|打扫|清洁|洗衣|晾衣|拖地|扫地|垃圾|整理|收纳|冰箱|空调|洗衣机|热水器|电风扇|吸尘器|扫地机|净水器|饮水机|电费|水费|燃气|天然气|物业|维修|报修|漏水|停水|停电|断网|宽带|路由器|网络|租房|房租|房东|押金|搬家|门锁|钥匙|门禁|小区|楼道|电梯|阳台|厨房|卧室|客厅|卫生间|床单|被套|毛巾|牙刷|纸巾|洗发水|沐浴露|洗洁精|洗衣液|家人|孩子|父母|工作|学习|上班|下班|加班|请假|调休|考勤|打卡|会议|开会|周报|日报|汇报|沟通|同事|领导|任务|项目|进度|计划|安排|日程|截止|延期|文件|文档|表格|附件|邮件|发送|接收|确认|修改|提交|审核|审批|报销|出差|实习|面试|简历|培训|复习|预习|作业|课程|课堂|老师|同学|考试|考研|考公|英语|语文|数学|笔记|重点|错题|知识点|背诵|练习|成绩|学期|论文|查重|答辩|资料|图书馆|心情|情绪|感受|感觉|开心|高兴|快乐|幸福|满足|期待|激动|感动|感谢|感激|安心|放心|轻松|放松|紧张|焦虑|担心|难过|伤心|失落|委屈|生气|愤怒|烦躁|烦恼|疲惫|疲倦|压力|内耗|失望|后悔|抱歉|对不起|道歉|原谅|误会|理解|尊重|信任|支持|鼓励|安慰|陪伴|倾听|沟通|耐心|包容|拒绝|边界|关系|相处|矛盾|争吵|冷静|和好|休闲|娱乐|周末|假期|放假|聚会|约饭|逛街|散步|徒步|露营|野餐|骑行|跑步|健身|游泳|瑜伽|羽毛球|篮球|足球|乒乓球|网球|运动|拉伸|热身|锻炼|音乐|歌曲|歌手|歌词|歌单|专辑|演唱会|耳机|音箱|电影|影院|电视剧|综艺|动漫|动画|纪录片|视频|追剧|游戏|队友|组队|联机|排位|关卡|小说|阅读|摄影|拍照|相机|桌游|密室|剧本杀",
+      "references": [
+        "https://github.com/iDvel/rime-ice"
+      ],
+      "additions": [
+        {
+          "term": "今天",
+          "aliases": []
+        },
+        {
+          "term": "明天",
+          "aliases": []
+        },
+        {
+          "term": "后天",
+          "aliases": []
+        },
+        {
+          "term": "昨天",
+          "aliases": []
+        },
+        {
+          "term": "刚才",
+          "aliases": []
+        },
+        {
+          "term": "现在",
+          "aliases": []
+        },
+        {
+          "term": "待会儿",
+          "aliases": []
+        },
+        {
+          "term": "一会儿",
+          "aliases": []
+        },
+        {
+          "term": "等一下",
+          "aliases": []
+        },
+        {
+          "term": "稍等一下",
+          "aliases": []
+        },
+        {
+          "term": "没问题",
+          "aliases": []
+        },
+        {
+          "term": "没关系",
+          "aliases": []
+        },
+        {
+          "term": "不用了",
+          "aliases": []
+        },
+        {
+          "term": "先不用",
+          "aliases": []
+        },
+        {
+          "term": "暂时不用",
+          "aliases": []
+        },
+        {
+          "term": "还没想好",
+          "aliases": []
+        },
+        {
+          "term": "我想一下",
+          "aliases": []
+        },
+        {
+          "term": "我觉得",
+          "aliases": []
+        },
+        {
+          "term": "我认为",
+          "aliases": []
+        },
+        {
+          "term": "我不确定",
+          "aliases": []
+        },
+        {
+          "term": "应该可以",
+          "aliases": []
+        },
+        {
+          "term": "不太合适",
+          "aliases": []
+        },
+        {
+          "term": "差不多",
+          "aliases": []
+        },
+        {
+          "term": "有一点",
+          "aliases": []
+        },
+        {
+          "term": "可能吧",
+          "aliases": []
+        },
+        {
+          "term": "不是这个意思",
+          "aliases": []
+        },
+        {
+          "term": "我的意思是",
+          "aliases": []
+        },
+        {
+          "term": "换句话说",
+          "aliases": []
+        },
+        {
+          "term": "举个例子",
+          "aliases": []
+        },
+        {
+          "term": "先这样吧",
+          "aliases": []
+        },
+        {
+          "term": "回头再说",
+          "aliases": []
+        },
+        {
+          "term": "晚点再聊",
+          "aliases": []
+        },
+        {
+          "term": "到时候再看",
+          "aliases": []
+        },
+        {
+          "term": "来得及",
+          "aliases": []
+        },
+        {
+          "term": "来不及",
+          "aliases": []
+        },
+        {
+          "term": "顺便",
+          "aliases": []
+        },
+        {
+          "term": "提前",
+          "aliases": []
+        },
+        {
+          "term": "推迟",
+          "aliases": []
+        },
+        {
+          "term": "按时",
+          "aliases": []
+        },
+        {
+          "term": "尽快",
+          "aliases": []
+        },
+        {
+          "term": "已经",
+          "aliases": []
+        },
+        {
+          "term": "还没有",
+          "aliases": []
+        },
+        {
+          "term": "不一定",
+          "aliases": []
+        },
+        {
+          "term": "当然可以",
+          "aliases": []
+        },
+        {
+          "term": "麻烦你了",
+          "aliases": []
+        },
+        {
+          "term": "谢谢你",
+          "aliases": []
+        },
+        {
+          "term": "不好意思",
+          "aliases": []
+        },
+        {
+          "term": "辛苦了",
+          "aliases": []
+        },
+        {
+          "term": "可以的",
+          "aliases": []
+        },
+        {
+          "term": "没听清",
+          "aliases": []
+        }
+      ],
+      "version": "2026.09.05-1",
+      "reviewedAt": "2026-09-05",
+      "upstreamDate": "2026-08-31T09:44:46Z",
+      "sourceUrl": "https://github.com/iDvel/rime-ice/tree/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts",
+      "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+      "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+      "sources": [
+        {
+          "path": "cn_dicts/base.dict.yaml",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml"
+          ],
+          "bytes": 16620279,
+          "sha256": "6c594bbd03425600aa36894b713f3d268bd2a11099833a312160249e0a3f0082"
+        },
+        {
+          "path": "LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE"
+          ],
+          "bytes": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        }
+      ],
+      "bytes": 16655428,
+      "termCount": 12021,
+      "termsSha256": "2365b4da302df8720857c0ea3a80e759208362ea39e351108ba9dccbec4b2972"
+    },
+    {
+      "id": "daily-chat",
+      "name": "聊天与口语",
+      "icon": "messages-square",
+      "summary": "问候、接话、请求、拒绝与口语衔接",
+      "category": "日常",
+      "upstream": {
+        "repository": "iDvel/rime-ice",
+        "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+        "licenseFiles": [
+          "LICENSE"
+        ],
+        "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+        "sourceDirectory": "cn_dicts"
+      },
+      "format": "rime-tsv",
+      "files": [
+        "cn_dicts/base.dict.yaml"
+      ],
+      "sourceCache": true,
+      "limit": 1500,
+      "maxLength": 8,
+      "filter": "聊天|问候|商量|打扰|麻烦|谢谢|抱歉|再见|不好意思|没关系|没问题|请问|稍等|打算|觉得|认为|好像|怎么|什么|为啥|为什么|哪里|哪儿|时候|朋友|同事|家人|亲戚|同学|早安|晚安|早上好|晚上好|原来|其实|不过|但是|所以|然后|要不|或者|反正|至少|毕竟|难怪|确实|大概|估计|可能|说实话|总之|比如|例如|意思",
+      "references": [
+        "https://github.com/iDvel/rime-ice"
+      ],
+      "additions": [
+        {
+          "term": "早上好",
+          "aliases": []
+        },
+        {
+          "term": "晚上好",
+          "aliases": []
+        },
+        {
+          "term": "晚安",
+          "aliases": []
+        },
+        {
+          "term": "好久不见",
+          "aliases": []
+        },
+        {
+          "term": "最近怎么样",
+          "aliases": []
+        },
+        {
+          "term": "你先忙",
+          "aliases": []
+        },
+        {
+          "term": "我这边好了",
+          "aliases": []
+        },
+        {
+          "term": "收到消息",
+          "aliases": []
+        },
+        {
+          "term": "看到了",
+          "aliases": []
+        },
+        {
+          "term": "稍后回复",
+          "aliases": []
+        },
+        {
+          "term": "方便吗",
+          "aliases": []
+        },
+        {
+          "term": "有空吗",
+          "aliases": []
+        },
+        {
+          "term": "帮我看看",
+          "aliases": []
+        },
+        {
+          "term": "麻烦看一下",
+          "aliases": []
+        },
+        {
+          "term": "请稍等",
+          "aliases": []
+        },
+        {
+          "term": "不用客气",
+          "aliases": []
+        },
+        {
+          "term": "不着急",
+          "aliases": []
+        },
+        {
+          "term": "慢慢来",
+          "aliases": []
+        },
+        {
+          "term": "别担心",
+          "aliases": []
+        },
+        {
+          "term": "你说得对",
+          "aliases": []
+        },
+        {
+          "term": "我明白了",
+          "aliases": []
+        },
+        {
+          "term": "没太听懂",
+          "aliases": []
+        },
+        {
+          "term": "再说一遍",
+          "aliases": []
+        },
+        {
+          "term": "简单来说",
+          "aliases": []
+        },
+        {
+          "term": "准确地说",
+          "aliases": []
+        },
+        {
+          "term": "顺便问一下",
+          "aliases": []
+        },
+        {
+          "term": "还有一个问题",
+          "aliases": []
+        },
+        {
+          "term": "说到这里",
+          "aliases": []
+        },
+        {
+          "term": "等我一下",
+          "aliases": []
+        },
+        {
+          "term": "晚点联系",
+          "aliases": []
+        },
+        {
+          "term": "回头联系",
+          "aliases": []
+        },
+        {
+          "term": "下次再约",
+          "aliases": []
+        },
+        {
+          "term": "今天不太方便",
+          "aliases": []
+        },
+        {
+          "term": "改天可以吗",
+          "aliases": []
+        },
+        {
+          "term": "我再确认一下",
+          "aliases": []
+        },
+        {
+          "term": "先不考虑",
+          "aliases": []
+        },
+        {
+          "term": "暂时不需要",
+          "aliases": []
+        },
+        {
+          "term": "不是说不行",
+          "aliases": []
+        },
+        {
+          "term": "我的想法是",
+          "aliases": []
+        },
+        {
+          "term": "先说结论",
+          "aliases": []
+        },
+        {
+          "term": "补充一下",
+          "aliases": []
+        },
+        {
+          "term": "刚刚说错了",
+          "aliases": []
+        },
+        {
+          "term": "换一个说法",
+          "aliases": []
+        },
+        {
+          "term": "我举个例子",
+          "aliases": []
+        },
+        {
+          "term": "差不多就这样",
+          "aliases": []
+        },
+        {
+          "term": "你怎么看",
+          "aliases": []
+        },
+        {
+          "term": "我再想想",
+          "aliases": []
+        },
+        {
+          "term": "一会儿见",
+          "aliases": []
+        }
+      ],
+      "version": "2026.09.05-1",
+      "reviewedAt": "2026-09-05",
+      "upstreamDate": "2026-08-31T09:44:46Z",
+      "sourceUrl": "https://github.com/iDvel/rime-ice/tree/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts",
+      "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+      "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+      "sources": [
+        {
+          "path": "cn_dicts/base.dict.yaml",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml"
+          ],
+          "bytes": 16620279,
+          "sha256": "6c594bbd03425600aa36894b713f3d268bd2a11099833a312160249e0a3f0082"
+        },
+        {
+          "path": "LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE"
+          ],
+          "bytes": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        }
+      ],
+      "bytes": 16655428,
+      "termCount": 1543,
+      "termsSha256": "2fb795cf628521a33b0fd1754705c7f413b02b46fd5892f109aeb7f0c10bc3e1"
+    },
+    {
+      "id": "daily-food",
+      "name": "吃饭与餐饮",
+      "icon": "utensils",
+      "summary": "点餐、口味、饮品、食材与做饭",
+      "category": "日常",
+      "upstream": {
+        "repository": "iDvel/rime-ice",
+        "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+        "licenseFiles": [
+          "LICENSE"
+        ],
+        "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+        "sourceDirectory": "cn_dicts"
+      },
+      "format": "rime-tsv",
+      "files": [
+        "cn_dicts/base.dict.yaml"
+      ],
+      "sourceCache": true,
+      "limit": 1200,
+      "maxLength": 8,
+      "filter": "吃饭|点餐|外卖|餐厅|饭店|早餐|午餐|晚餐|夜宵|食堂|菜单|饮品|饮料|咖啡|奶茶|牛奶|酸奶|果汁|面包|蛋糕|饼干|火锅|烧烤|麻辣|米饭|面条|炒饭|炒面|饺子|包子|馒头|馄饨|米线|螺蛳粉|蔬菜|水果|鸡蛋|鸡肉|牛肉|猪肉|羊肉|鱼肉|虾仁|土豆|番茄|西红柿|黄瓜|青菜|豆腐|香菜|葱花|辣椒|花生|过敏|少糖|无糖|去冰|打包|清淡|口味|酱油|食盐|食用油|食材|烹饪|做饭|煮饭|蒸|炖|煎饼",
+      "references": [
+        "https://github.com/iDvel/rime-ice"
+      ],
+      "additions": [
+        {
+          "term": "少冰",
+          "aliases": []
+        },
+        {
+          "term": "去冰",
+          "aliases": []
+        },
+        {
+          "term": "常温",
+          "aliases": []
+        },
+        {
+          "term": "热饮",
+          "aliases": []
+        },
+        {
+          "term": "半糖",
+          "aliases": []
+        },
+        {
+          "term": "三分糖",
+          "aliases": []
+        },
+        {
+          "term": "不另外加糖",
+          "aliases": []
+        },
+        {
+          "term": "少油少盐",
+          "aliases": []
+        },
+        {
+          "term": "微辣",
+          "aliases": []
+        },
+        {
+          "term": "中辣",
+          "aliases": []
+        },
+        {
+          "term": "特辣",
+          "aliases": []
+        },
+        {
+          "term": "不要香菜",
+          "aliases": []
+        },
+        {
+          "term": "不要葱花",
+          "aliases": []
+        },
+        {
+          "term": "酱料分开",
+          "aliases": []
+        },
+        {
+          "term": "多加一份",
+          "aliases": []
+        },
+        {
+          "term": "堂食",
+          "aliases": []
+        },
+        {
+          "term": "打包带走",
+          "aliases": []
+        },
+        {
+          "term": "自带餐具",
+          "aliases": []
+        },
+        {
+          "term": "无需餐具",
+          "aliases": []
+        },
+        {
+          "term": "餐具数量",
+          "aliases": []
+        },
+        {
+          "term": "取餐码",
+          "aliases": []
+        },
+        {
+          "term": "送餐地址",
+          "aliases": []
+        },
+        {
+          "term": "预计送达",
+          "aliases": []
+        },
+        {
+          "term": "外卖小哥",
+          "aliases": []
+        },
+        {
+          "term": "食品过敏",
+          "aliases": []
+        },
+        {
+          "term": "花生过敏",
+          "aliases": []
+        },
+        {
+          "term": "乳糖不耐受",
+          "aliases": []
+        },
+        {
+          "term": "低糖",
+          "aliases": []
+        },
+        {
+          "term": "无糖饮料",
+          "aliases": []
+        },
+        {
+          "term": "手冲咖啡",
+          "aliases": []
+        },
+        {
+          "term": "冰美式",
+          "aliases": []
+        },
+        {
+          "term": "燕麦拿铁",
+          "aliases": []
+        },
+        {
+          "term": "珍珠奶茶",
+          "aliases": []
+        },
+        {
+          "term": "生椰拿铁",
+          "aliases": []
+        },
+        {
+          "term": "番茄炒蛋",
+          "aliases": []
+        },
+        {
+          "term": "宫保鸡丁",
+          "aliases": []
+        },
+        {
+          "term": "鱼香肉丝",
+          "aliases": []
+        },
+        {
+          "term": "青椒肉丝",
+          "aliases": []
+        },
+        {
+          "term": "麻婆豆腐",
+          "aliases": []
+        },
+        {
+          "term": "酸菜鱼",
+          "aliases": []
+        },
+        {
+          "term": "清蒸鱼",
+          "aliases": []
+        },
+        {
+          "term": "螺蛳粉",
+          "aliases": []
+        },
+        {
+          "term": "热干面",
+          "aliases": []
+        },
+        {
+          "term": "牛肉面",
+          "aliases": []
+        },
+        {
+          "term": "馄饨",
+          "aliases": []
+        },
+        {
+          "term": "饺子",
+          "aliases": []
+        },
+        {
+          "term": "小笼包",
+          "aliases": []
+        },
+        {
+          "term": "空气炸锅",
+          "aliases": []
+        },
+        {
+          "term": "电饭煲",
+          "aliases": []
+        },
+        {
+          "term": "保鲜盒",
+          "aliases": []
+        }
+      ],
+      "version": "2026.09.05-1",
+      "reviewedAt": "2026-09-05",
+      "upstreamDate": "2026-08-31T09:44:46Z",
+      "sourceUrl": "https://github.com/iDvel/rime-ice/tree/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts",
+      "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+      "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+      "sources": [
+        {
+          "path": "cn_dicts/base.dict.yaml",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml"
+          ],
+          "bytes": 16620279,
+          "sha256": "6c594bbd03425600aa36894b713f3d268bd2a11099833a312160249e0a3f0082"
+        },
+        {
+          "path": "LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE"
+          ],
+          "bytes": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        }
+      ],
+      "bytes": 16655428,
+      "termCount": 1241,
+      "termsSha256": "52c514498821fe3e7386613e122469825f16a15fc3d9d481084e0ea32f773dcf"
+    },
+    {
+      "id": "daily-shopping",
+      "name": "购物与快递",
+      "icon": "shopping-bag",
+      "summary": "网购、付款、尺码、售后与收件",
+      "category": "日常",
+      "upstream": {
+        "repository": "iDvel/rime-ice",
+        "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+        "licenseFiles": [
+          "LICENSE"
+        ],
+        "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+        "sourceDirectory": "cn_dicts"
+      },
+      "format": "rime-tsv",
+      "files": [
+        "cn_dicts/base.dict.yaml"
+      ],
+      "sourceCache": true,
+      "limit": 1000,
+      "maxLength": 8,
+      "filter": "购物|买东西|商品|商家|店铺|超市|便利店|价格|优惠|折扣|满减|促销|运费|包邮|快递|物流|收货|发货|退货|换货|退款|售后|客服|订单|付款|支付|现金|支付宝|微信|发票|小票|尺码|尺寸|颜色|款式|库存|预售|现货|保修|保质期|生产日期|收件|寄件|取件|签收|驿站|快递柜|自提|送货|收货地址|七天无理由|评价|质保",
+      "references": [
+        "https://github.com/iDvel/rime-ice"
+      ],
+      "additions": [
+        {
+          "term": "下单",
+          "aliases": []
+        },
+        {
+          "term": "凑单",
+          "aliases": []
+        },
+        {
+          "term": "合并付款",
+          "aliases": []
+        },
+        {
+          "term": "订单编号",
+          "aliases": []
+        },
+        {
+          "term": "收货地址",
+          "aliases": []
+        },
+        {
+          "term": "默认地址",
+          "aliases": []
+        },
+        {
+          "term": "联系电话",
+          "aliases": []
+        },
+        {
+          "term": "到货时间",
+          "aliases": []
+        },
+        {
+          "term": "延迟发货",
+          "aliases": []
+        },
+        {
+          "term": "派送中",
+          "aliases": []
+        },
+        {
+          "term": "放在门口",
+          "aliases": []
+        },
+        {
+          "term": "联系不上",
+          "aliases": []
+        },
+        {
+          "term": "快递驿站",
+          "aliases": []
+        },
+        {
+          "term": "取件码",
+          "aliases": []
+        },
+        {
+          "term": "快递柜",
+          "aliases": []
+        },
+        {
+          "term": "上门取件",
+          "aliases": []
+        },
+        {
+          "term": "上门退货",
+          "aliases": []
+        },
+        {
+          "term": "运费险",
+          "aliases": []
+        },
+        {
+          "term": "仅退款",
+          "aliases": []
+        },
+        {
+          "term": "退货退款",
+          "aliases": []
+        },
+        {
+          "term": "换个尺码",
+          "aliases": []
+        },
+        {
+          "term": "尺码偏小",
+          "aliases": []
+        },
+        {
+          "term": "尺码偏大",
+          "aliases": []
+        },
+        {
+          "term": "同款",
+          "aliases": []
+        },
+        {
+          "term": "色差",
+          "aliases": []
+        },
+        {
+          "term": "实物图",
+          "aliases": []
+        },
+        {
+          "term": "实付金额",
+          "aliases": []
+        },
+        {
+          "term": "优惠券",
+          "aliases": []
+        },
+        {
+          "term": "满减活动",
+          "aliases": []
+        },
+        {
+          "term": "会员价",
+          "aliases": []
+        },
+        {
+          "term": "到手价",
+          "aliases": []
+        },
+        {
+          "term": "包邮",
+          "aliases": []
+        },
+        {
+          "term": "不包邮",
+          "aliases": []
+        },
+        {
+          "term": "免运费",
+          "aliases": []
+        },
+        {
+          "term": "库存不足",
+          "aliases": []
+        },
+        {
+          "term": "缺货",
+          "aliases": []
+        },
+        {
+          "term": "电子发票",
+          "aliases": []
+        },
+        {
+          "term": "发票抬头",
+          "aliases": []
+        },
+        {
+          "term": "保修期",
+          "aliases": []
+        },
+        {
+          "term": "七天无理由",
+          "aliases": []
+        },
+        {
+          "term": "漏发",
+          "aliases": []
+        },
+        {
+          "term": "错发",
+          "aliases": []
+        },
+        {
+          "term": "破损",
+          "aliases": []
+        },
+        {
+          "term": "重新补发",
+          "aliases": []
+        },
+        {
+          "term": "退款到账",
+          "aliases": []
+        },
+        {
+          "term": "支付成功",
+          "aliases": []
+        },
+        {
+          "term": "未支付",
+          "aliases": []
+        },
+        {
+          "term": "自动扣费",
+          "aliases": []
+        },
+        {
+          "term": "取消续费",
+          "aliases": []
+        }
+      ],
+      "version": "2026.09.05-1",
+      "reviewedAt": "2026-09-05",
+      "upstreamDate": "2026-08-31T09:44:46Z",
+      "sourceUrl": "https://github.com/iDvel/rime-ice/tree/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts",
+      "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+      "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+      "sources": [
+        {
+          "path": "cn_dicts/base.dict.yaml",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml"
+          ],
+          "bytes": 16620279,
+          "sha256": "6c594bbd03425600aa36894b713f3d268bd2a11099833a312160249e0a3f0082"
+        },
+        {
+          "path": "LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE"
+          ],
+          "bytes": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        }
+      ],
+      "bytes": 16655428,
+      "termCount": 1044,
+      "termsSha256": "b80263dd7aa62a7eafecd821a7f5dc9a759107470960caa885eb29b2fc60a658"
+    },
+    {
+      "id": "daily-travel",
+      "name": "出行与旅游",
+      "icon": "train-front",
+      "summary": "通勤、打车、公共交通、订票与住宿",
+      "category": "日常",
+      "upstream": {
+        "repository": "iDvel/rime-ice",
+        "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+        "licenseFiles": [
+          "LICENSE"
+        ],
+        "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+        "sourceDirectory": "cn_dicts"
+      },
+      "format": "rime-tsv",
+      "files": [
+        "cn_dicts/base.dict.yaml"
+      ],
+      "sourceCache": true,
+      "limit": 1500,
+      "maxLength": 8,
+      "filter": "出行|旅游|旅行|通勤|公交|地铁|高铁|动车|火车|飞机|航班|机场|车站|候车|检票|进站|出站|换乘|打车|出租车|网约车|顺风车|拼车|导航|路线|路口|堵车|停车|车位|高速|收费站|机票|车票|订票|退票|改签|座位|靠窗|过道|行李|登机|安检|身份证|酒店|民宿|入住|退房|前台|大床房|双床房|景点|门票|预约|行程|攻略|自驾|步行|骑行|共享单车|交通|出发|到达|到站",
+      "references": [
+        "https://github.com/iDvel/rime-ice"
+      ],
+      "additions": [
+        {
+          "term": "上车点",
+          "aliases": []
+        },
+        {
+          "term": "下车点",
+          "aliases": []
+        },
+        {
+          "term": "定位不准",
+          "aliases": []
+        },
+        {
+          "term": "我在路边",
+          "aliases": []
+        },
+        {
+          "term": "稍等两分钟",
+          "aliases": []
+        },
+        {
+          "term": "提前出发",
+          "aliases": []
+        },
+        {
+          "term": "错过末班车",
+          "aliases": []
+        },
+        {
+          "term": "地铁换乘",
+          "aliases": []
+        },
+        {
+          "term": "公交站台",
+          "aliases": []
+        },
+        {
+          "term": "网约车",
+          "aliases": []
+        },
+        {
+          "term": "顺风车",
+          "aliases": []
+        },
+        {
+          "term": "共享单车",
+          "aliases": []
+        },
+        {
+          "term": "停车场入口",
+          "aliases": []
+        },
+        {
+          "term": "地下停车场",
+          "aliases": []
+        },
+        {
+          "term": "导航路线",
+          "aliases": []
+        },
+        {
+          "term": "实时路况",
+          "aliases": []
+        },
+        {
+          "term": "高峰时段",
+          "aliases": []
+        },
+        {
+          "term": "高速收费",
+          "aliases": []
+        },
+        {
+          "term": "候车室",
+          "aliases": []
+        },
+        {
+          "term": "检票口",
+          "aliases": []
+        },
+        {
+          "term": "站台",
+          "aliases": []
+        },
+        {
+          "term": "车厢号",
+          "aliases": []
+        },
+        {
+          "term": "二等座",
+          "aliases": []
+        },
+        {
+          "term": "一等座",
+          "aliases": []
+        },
+        {
+          "term": "靠窗座位",
+          "aliases": []
+        },
+        {
+          "term": "靠过道",
+          "aliases": []
+        },
+        {
+          "term": "行李架",
+          "aliases": []
+        },
+        {
+          "term": "登机口",
+          "aliases": []
+        },
+        {
+          "term": "航班延误",
+          "aliases": []
+        },
+        {
+          "term": "随身行李",
+          "aliases": []
+        },
+        {
+          "term": "托运行李",
+          "aliases": []
+        },
+        {
+          "term": "行李额度",
+          "aliases": []
+        },
+        {
+          "term": "值机",
+          "aliases": []
+        },
+        {
+          "term": "自助值机",
+          "aliases": []
+        },
+        {
+          "term": "身份证件",
+          "aliases": []
+        },
+        {
+          "term": "入住时间",
+          "aliases": []
+        },
+        {
+          "term": "退房时间",
+          "aliases": []
+        },
+        {
+          "term": "延迟退房",
+          "aliases": []
+        },
+        {
+          "term": "行李寄存",
+          "aliases": []
+        },
+        {
+          "term": "无烟房",
+          "aliases": []
+        },
+        {
+          "term": "大床房",
+          "aliases": []
+        },
+        {
+          "term": "双床房",
+          "aliases": []
+        },
+        {
+          "term": "含早餐",
+          "aliases": []
+        },
+        {
+          "term": "景区预约",
+          "aliases": []
+        },
+        {
+          "term": "电子门票",
+          "aliases": []
+        },
+        {
+          "term": "自由行",
+          "aliases": []
+        },
+        {
+          "term": "短途旅行",
+          "aliases": []
+        },
+        {
+          "term": "返程",
+          "aliases": []
+        },
+        {
+          "term": "中转",
+          "aliases": []
+        },
+        {
+          "term": "改签费用",
+          "aliases": []
+        }
+      ],
+      "version": "2026.09.05-1",
+      "reviewedAt": "2026-09-05",
+      "upstreamDate": "2026-08-31T09:44:46Z",
+      "sourceUrl": "https://github.com/iDvel/rime-ice/tree/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts",
+      "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+      "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+      "sources": [
+        {
+          "path": "cn_dicts/base.dict.yaml",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml"
+          ],
+          "bytes": 16620279,
+          "sha256": "6c594bbd03425600aa36894b713f3d268bd2a11099833a312160249e0a3f0082"
+        },
+        {
+          "path": "LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE"
+          ],
+          "bytes": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        }
+      ],
+      "bytes": 16655428,
+      "termCount": 1538,
+      "termsSha256": "6436edc9b0666a73df289323e82d9e636ce29b64b38bb9017d7243bf8ae26319"
+    },
+    {
+      "id": "daily-home",
+      "name": "居家与生活",
+      "icon": "house",
+      "summary": "家务、家电、租房、物业与家庭安排",
+      "category": "日常",
+      "upstream": {
+        "repository": "iDvel/rime-ice",
+        "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+        "licenseFiles": [
+          "LICENSE"
+        ],
+        "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+        "sourceDirectory": "cn_dicts"
+      },
+      "format": "rime-tsv",
+      "files": [
+        "cn_dicts/base.dict.yaml"
+      ],
+      "sourceCache": true,
+      "limit": 1000,
+      "maxLength": 8,
+      "filter": "居家|家务|打扫|清洁|洗衣|晾衣|拖地|扫地|垃圾|整理|收纳|冰箱|空调|洗衣机|热水器|电风扇|吸尘器|扫地机|净水器|饮水机|电费|水费|燃气|天然气|物业|维修|报修|漏水|停水|停电|断网|宽带|路由器|网络|租房|房租|房东|押金|搬家|门锁|钥匙|门禁|小区|楼道|电梯|阳台|厨房|卧室|客厅|卫生间|床单|被套|毛巾|牙刷|纸巾|洗发水|沐浴露|洗洁精|洗衣液|家人|孩子|父母",
+      "references": [
+        "https://github.com/iDvel/rime-ice"
+      ],
+      "additions": [
+        {
+          "term": "物业费",
+          "aliases": []
+        },
+        {
+          "term": "水电费",
+          "aliases": []
+        },
+        {
+          "term": "燃气费",
+          "aliases": []
+        },
+        {
+          "term": "宽带续费",
+          "aliases": []
+        },
+        {
+          "term": "门禁卡",
+          "aliases": []
+        },
+        {
+          "term": "智能门锁",
+          "aliases": []
+        },
+        {
+          "term": "备用钥匙",
+          "aliases": []
+        },
+        {
+          "term": "上门维修",
+          "aliases": []
+        },
+        {
+          "term": "预约安装",
+          "aliases": []
+        },
+        {
+          "term": "下水道堵了",
+          "aliases": []
+        },
+        {
+          "term": "水龙头漏水",
+          "aliases": []
+        },
+        {
+          "term": "热水器故障",
+          "aliases": []
+        },
+        {
+          "term": "空调清洗",
+          "aliases": []
+        },
+        {
+          "term": "滤芯更换",
+          "aliases": []
+        },
+        {
+          "term": "洗衣液",
+          "aliases": []
+        },
+        {
+          "term": "柔顺剂",
+          "aliases": []
+        },
+        {
+          "term": "洗洁精",
+          "aliases": []
+        },
+        {
+          "term": "垃圾袋",
+          "aliases": []
+        },
+        {
+          "term": "抽纸",
+          "aliases": []
+        },
+        {
+          "term": "卷纸",
+          "aliases": []
+        },
+        {
+          "term": "厨房纸",
+          "aliases": []
+        },
+        {
+          "term": "保鲜膜",
+          "aliases": []
+        },
+        {
+          "term": "衣物分类",
+          "aliases": []
+        },
+        {
+          "term": "垃圾分类",
+          "aliases": []
+        },
+        {
+          "term": "可回收物",
+          "aliases": []
+        },
+        {
+          "term": "干垃圾",
+          "aliases": []
+        },
+        {
+          "term": "湿垃圾",
+          "aliases": []
+        },
+        {
+          "term": "清理冰箱",
+          "aliases": []
+        },
+        {
+          "term": "换床单",
+          "aliases": []
+        },
+        {
+          "term": "晒被子",
+          "aliases": []
+        },
+        {
+          "term": "通风",
+          "aliases": []
+        },
+        {
+          "term": "除湿",
+          "aliases": []
+        },
+        {
+          "term": "定时关机",
+          "aliases": []
+        },
+        {
+          "term": "断电重启",
+          "aliases": []
+        },
+        {
+          "term": "无线网络",
+          "aliases": []
+        },
+        {
+          "term": "路由器重启",
+          "aliases": []
+        },
+        {
+          "term": "网络密码",
+          "aliases": []
+        },
+        {
+          "term": "合租",
+          "aliases": []
+        },
+        {
+          "term": "整租",
+          "aliases": []
+        },
+        {
+          "term": "续租",
+          "aliases": []
+        },
+        {
+          "term": "退租",
+          "aliases": []
+        },
+        {
+          "term": "押一付三",
+          "aliases": []
+        },
+        {
+          "term": "租赁合同",
+          "aliases": []
+        },
+        {
+          "term": "交接钥匙",
+          "aliases": []
+        },
+        {
+          "term": "打包搬家",
+          "aliases": []
+        },
+        {
+          "term": "小区门口",
+          "aliases": []
+        },
+        {
+          "term": "楼下",
+          "aliases": []
+        },
+        {
+          "term": "单元门",
+          "aliases": []
+        },
+        {
+          "term": "电梯检修",
+          "aliases": []
+        },
+        {
+          "term": "收纳箱",
+          "aliases": []
+        }
+      ],
+      "version": "2026.09.05-1",
+      "reviewedAt": "2026-09-05",
+      "upstreamDate": "2026-08-31T09:44:46Z",
+      "sourceUrl": "https://github.com/iDvel/rime-ice/tree/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts",
+      "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+      "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+      "sources": [
+        {
+          "path": "cn_dicts/base.dict.yaml",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml"
+          ],
+          "bytes": 16620279,
+          "sha256": "6c594bbd03425600aa36894b713f3d268bd2a11099833a312160249e0a3f0082"
+        },
+        {
+          "path": "LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE"
+          ],
+          "bytes": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        }
+      ],
+      "bytes": 16655428,
+      "termCount": 1042,
+      "termsSha256": "ce97154d734f5dcc64006c64393b7574aa9feac27d98a0c803872277e2db7f49"
+    },
+    {
+      "id": "daily-work-study",
+      "name": "工作与学习",
+      "icon": "graduation-cap",
+      "summary": "会议、沟通、日程、课程、作业与考试",
+      "category": "日常",
+      "upstream": {
+        "repository": "iDvel/rime-ice",
+        "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+        "licenseFiles": [
+          "LICENSE"
+        ],
+        "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+        "sourceDirectory": "cn_dicts"
+      },
+      "format": "rime-tsv",
+      "files": [
+        "cn_dicts/base.dict.yaml"
+      ],
+      "sourceCache": true,
+      "limit": 1800,
+      "maxLength": 8,
+      "filter": "工作|学习|上班|下班|加班|请假|调休|考勤|打卡|会议|开会|周报|日报|汇报|沟通|同事|领导|任务|项目|进度|计划|安排|日程|截止|延期|文件|文档|表格|附件|邮件|发送|接收|确认|修改|提交|审核|审批|报销|出差|实习|面试|简历|培训|复习|预习|作业|课程|课堂|老师|同学|考试|考研|考公|英语|语文|数学|笔记|重点|错题|知识点|背诵|练习|成绩|学期|论文|查重|答辩|资料|图书馆",
+      "references": [
+        "https://github.com/iDvel/rime-ice"
+      ],
+      "additions": [
+        {
+          "term": "会议纪要",
+          "aliases": []
+        },
+        {
+          "term": "待办事项",
+          "aliases": []
+        },
+        {
+          "term": "截止日期",
+          "aliases": []
+        },
+        {
+          "term": "时间安排",
+          "aliases": []
+        },
+        {
+          "term": "进度同步",
+          "aliases": []
+        },
+        {
+          "term": "补充说明",
+          "aliases": []
+        },
+        {
+          "term": "反馈意见",
+          "aliases": []
+        },
+        {
+          "term": "确认收到",
+          "aliases": []
+        },
+        {
+          "term": "稍后处理",
+          "aliases": []
+        },
+        {
+          "term": "今天之内",
+          "aliases": []
+        },
+        {
+          "term": "下班之前",
+          "aliases": []
+        },
+        {
+          "term": "本周完成",
+          "aliases": []
+        },
+        {
+          "term": "下周跟进",
+          "aliases": []
+        },
+        {
+          "term": "优先处理",
+          "aliases": []
+        },
+        {
+          "term": "暂缓处理",
+          "aliases": []
+        },
+        {
+          "term": "附件见邮件",
+          "aliases": []
+        },
+        {
+          "term": "发送附件",
+          "aliases": []
+        },
+        {
+          "term": "在线文档",
+          "aliases": []
+        },
+        {
+          "term": "共享文件",
+          "aliases": []
+        },
+        {
+          "term": "修改权限",
+          "aliases": []
+        },
+        {
+          "term": "只读权限",
+          "aliases": []
+        },
+        {
+          "term": "版本记录",
+          "aliases": []
+        },
+        {
+          "term": "需求变更",
+          "aliases": []
+        },
+        {
+          "term": "请假申请",
+          "aliases": []
+        },
+        {
+          "term": "调休申请",
+          "aliases": []
+        },
+        {
+          "term": "报销凭证",
+          "aliases": []
+        },
+        {
+          "term": "出差安排",
+          "aliases": []
+        },
+        {
+          "term": "远程办公",
+          "aliases": []
+        },
+        {
+          "term": "视频会议",
+          "aliases": []
+        },
+        {
+          "term": "会议链接",
+          "aliases": []
+        },
+        {
+          "term": "屏幕共享",
+          "aliases": []
+        },
+        {
+          "term": "静音状态",
+          "aliases": []
+        },
+        {
+          "term": "课程安排",
+          "aliases": []
+        },
+        {
+          "term": "学习计划",
+          "aliases": []
+        },
+        {
+          "term": "错题整理",
+          "aliases": []
+        },
+        {
+          "term": "知识点总结",
+          "aliases": []
+        },
+        {
+          "term": "课后练习",
+          "aliases": []
+        },
+        {
+          "term": "复习进度",
+          "aliases": []
+        },
+        {
+          "term": "预习内容",
+          "aliases": []
+        },
+        {
+          "term": "考试范围",
+          "aliases": []
+        },
+        {
+          "term": "模拟试卷",
+          "aliases": []
+        },
+        {
+          "term": "英语听力",
+          "aliases": []
+        },
+        {
+          "term": "口语练习",
+          "aliases": []
+        },
+        {
+          "term": "背单词",
+          "aliases": []
+        },
+        {
+          "term": "阅读理解",
+          "aliases": []
+        },
+        {
+          "term": "毕业论文",
+          "aliases": []
+        },
+        {
+          "term": "参考文献",
+          "aliases": []
+        },
+        {
+          "term": "论文查重",
+          "aliases": []
+        },
+        {
+          "term": "答辩准备",
+          "aliases": []
+        },
+        {
+          "term": "期末考试",
+          "aliases": []
+        }
+      ],
+      "version": "2026.09.05-1",
+      "reviewedAt": "2026-09-05",
+      "upstreamDate": "2026-08-31T09:44:46Z",
+      "sourceUrl": "https://github.com/iDvel/rime-ice/tree/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts",
+      "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+      "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+      "sources": [
+        {
+          "path": "cn_dicts/base.dict.yaml",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml"
+          ],
+          "bytes": 16620279,
+          "sha256": "6c594bbd03425600aa36894b713f3d268bd2a11099833a312160249e0a3f0082"
+        },
+        {
+          "path": "LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE"
+          ],
+          "bytes": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        }
+      ],
+      "bytes": 16655428,
+      "termCount": 1839,
+      "termsSha256": "593494527e40db061906576ed4358c62ce9bf0f9502f72b513409fcd0d39a251"
+    },
+    {
+      "id": "daily-emotions",
+      "name": "情绪与人际",
+      "icon": "heart-handshake",
+      "summary": "感受、安慰、感谢、道歉与表达边界",
+      "category": "日常",
+      "upstream": {
+        "repository": "iDvel/rime-ice",
+        "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+        "licenseFiles": [
+          "LICENSE"
+        ],
+        "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+        "sourceDirectory": "cn_dicts"
+      },
+      "format": "rime-tsv",
+      "files": [
+        "cn_dicts/base.dict.yaml"
+      ],
+      "sourceCache": true,
+      "limit": 800,
+      "maxLength": 8,
+      "filter": "心情|情绪|感受|感觉|开心|高兴|快乐|幸福|满足|期待|激动|感动|感谢|感激|安心|放心|轻松|放松|紧张|焦虑|担心|难过|伤心|失落|委屈|生气|愤怒|烦躁|烦恼|疲惫|疲倦|压力|内耗|失望|后悔|抱歉|对不起|道歉|原谅|误会|理解|尊重|信任|支持|鼓励|安慰|陪伴|倾听|沟通|耐心|包容|拒绝|边界|关系|相处|矛盾|争吵|冷静|和好",
+      "references": [
+        "https://github.com/iDvel/rime-ice"
+      ],
+      "additions": [
+        {
+          "term": "有点累",
+          "aliases": []
+        },
+        {
+          "term": "不太舒服",
+          "aliases": []
+        },
+        {
+          "term": "心情不好",
+          "aliases": []
+        },
+        {
+          "term": "有点烦",
+          "aliases": []
+        },
+        {
+          "term": "压力有点大",
+          "aliases": []
+        },
+        {
+          "term": "需要休息一下",
+          "aliases": []
+        },
+        {
+          "term": "想一个人待会儿",
+          "aliases": []
+        },
+        {
+          "term": "让我缓一缓",
+          "aliases": []
+        },
+        {
+          "term": "先冷静一下",
+          "aliases": []
+        },
+        {
+          "term": "我不是在怪你",
+          "aliases": []
+        },
+        {
+          "term": "我不是故意的",
+          "aliases": []
+        },
+        {
+          "term": "刚才语气不好",
+          "aliases": []
+        },
+        {
+          "term": "是我没说清楚",
+          "aliases": []
+        },
+        {
+          "term": "可能有点误会",
+          "aliases": []
+        },
+        {
+          "term": "谢谢你的理解",
+          "aliases": []
+        },
+        {
+          "term": "谢谢你陪我",
+          "aliases": []
+        },
+        {
+          "term": "你已经很努力了",
+          "aliases": []
+        },
+        {
+          "term": "辛苦你了",
+          "aliases": []
+        },
+        {
+          "term": "慢慢来就好",
+          "aliases": []
+        },
+        {
+          "term": "不用勉强",
+          "aliases": []
+        },
+        {
+          "term": "别太自责",
+          "aliases": []
+        },
+        {
+          "term": "我能理解",
+          "aliases": []
+        },
+        {
+          "term": "我愿意听",
+          "aliases": []
+        },
+        {
+          "term": "你可以慢慢说",
+          "aliases": []
+        },
+        {
+          "term": "我需要一点时间",
+          "aliases": []
+        },
+        {
+          "term": "我想先休息",
+          "aliases": []
+        },
+        {
+          "term": "这让我不太舒服",
+          "aliases": []
+        },
+        {
+          "term": "这件事我做不到",
+          "aliases": []
+        },
+        {
+          "term": "我暂时不想聊",
+          "aliases": []
+        },
+        {
+          "term": "我希望你理解",
+          "aliases": []
+        },
+        {
+          "term": "尊重彼此",
+          "aliases": []
+        },
+        {
+          "term": "表达边界",
+          "aliases": []
+        },
+        {
+          "term": "情绪稳定",
+          "aliases": []
+        },
+        {
+          "term": "情绪价值",
+          "aliases": []
+        },
+        {
+          "term": "自我调节",
+          "aliases": []
+        },
+        {
+          "term": "自我接纳",
+          "aliases": []
+        },
+        {
+          "term": "过度内耗",
+          "aliases": []
+        },
+        {
+          "term": "放松一下",
+          "aliases": []
+        },
+        {
+          "term": "松了一口气",
+          "aliases": []
+        },
+        {
+          "term": "如释重负",
+          "aliases": []
+        },
+        {
+          "term": "不知所措",
+          "aliases": []
+        }
+      ],
+      "version": "2026.09.05-1",
+      "reviewedAt": "2026-09-05",
+      "upstreamDate": "2026-08-31T09:44:46Z",
+      "sourceUrl": "https://github.com/iDvel/rime-ice/tree/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts",
+      "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+      "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+      "sources": [
+        {
+          "path": "cn_dicts/base.dict.yaml",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml"
+          ],
+          "bytes": 16620279,
+          "sha256": "6c594bbd03425600aa36894b713f3d268bd2a11099833a312160249e0a3f0082"
+        },
+        {
+          "path": "LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE"
+          ],
+          "bytes": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        }
+      ],
+      "bytes": 16655428,
+      "termCount": 839,
+      "termsSha256": "779c3006cd02b65d4a78b342beb0e987b309682779435385000bbea17a9a9b2e"
+    },
+    {
+      "id": "daily-leisure",
+      "name": "休闲与娱乐",
+      "icon": "music",
+      "summary": "音乐、影视、游戏、运动与周末活动",
+      "category": "日常",
+      "upstream": {
+        "repository": "iDvel/rime-ice",
+        "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+        "licenseFiles": [
+          "LICENSE"
+        ],
+        "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+        "sourceDirectory": "cn_dicts"
+      },
+      "format": "rime-tsv",
+      "files": [
+        "cn_dicts/base.dict.yaml"
+      ],
+      "sourceCache": true,
+      "limit": 1000,
+      "maxLength": 8,
+      "filter": "休闲|娱乐|周末|假期|放假|聚会|约饭|逛街|散步|徒步|露营|野餐|骑行|跑步|健身|游泳|瑜伽|羽毛球|篮球|足球|乒乓球|网球|运动|拉伸|热身|锻炼|音乐|歌曲|歌手|歌词|歌单|专辑|演唱会|耳机|音箱|电影|影院|电视剧|综艺|动漫|动画|纪录片|视频|追剧|游戏|队友|组队|联机|排位|关卡|小说|阅读|摄影|拍照|相机|桌游|密室|剧本杀",
+      "references": [
+        "https://github.com/iDvel/rime-ice"
+      ],
+      "additions": [
+        {
+          "term": "单曲循环",
+          "aliases": []
+        },
+        {
+          "term": "随机播放",
+          "aliases": []
+        },
+        {
+          "term": "收藏歌单",
+          "aliases": []
+        },
+        {
+          "term": "最近在听",
+          "aliases": []
+        },
+        {
+          "term": "背景音乐",
+          "aliases": []
+        },
+        {
+          "term": "现场版",
+          "aliases": []
+        },
+        {
+          "term": "翻唱版",
+          "aliases": []
+        },
+        {
+          "term": "纯音乐",
+          "aliases": []
+        },
+        {
+          "term": "降噪耳机",
+          "aliases": []
+        },
+        {
+          "term": "蓝牙耳机",
+          "aliases": []
+        },
+        {
+          "term": "听播客",
+          "aliases": []
+        },
+        {
+          "term": "有声书",
+          "aliases": []
+        },
+        {
+          "term": "电影票",
+          "aliases": []
+        },
+        {
+          "term": "选座",
+          "aliases": []
+        },
+        {
+          "term": "场次",
+          "aliases": []
+        },
+        {
+          "term": "字幕版",
+          "aliases": []
+        },
+        {
+          "term": "配音版",
+          "aliases": []
+        },
+        {
+          "term": "片尾彩蛋",
+          "aliases": []
+        },
+        {
+          "term": "不剧透",
+          "aliases": []
+        },
+        {
+          "term": "追剧",
+          "aliases": []
+        },
+        {
+          "term": "倍速播放",
+          "aliases": []
+        },
+        {
+          "term": "稍后观看",
+          "aliases": []
+        },
+        {
+          "term": "收藏视频",
+          "aliases": []
+        },
+        {
+          "term": "联机游戏",
+          "aliases": []
+        },
+        {
+          "term": "组队邀请",
+          "aliases": []
+        },
+        {
+          "term": "语音聊天",
+          "aliases": []
+        },
+        {
+          "term": "匹配队友",
+          "aliases": []
+        },
+        {
+          "term": "休闲模式",
+          "aliases": []
+        },
+        {
+          "term": "排位赛",
+          "aliases": []
+        },
+        {
+          "term": "游戏存档",
+          "aliases": []
+        },
+        {
+          "term": "周末安排",
+          "aliases": []
+        },
+        {
+          "term": "约个饭",
+          "aliases": []
+        },
+        {
+          "term": "找个时间",
+          "aliases": []
+        },
+        {
+          "term": "公园散步",
+          "aliases": []
+        },
+        {
+          "term": "城市漫步",
+          "aliases": []
+        },
+        {
+          "term": "短途徒步",
+          "aliases": []
+        },
+        {
+          "term": "露营装备",
+          "aliases": []
+        },
+        {
+          "term": "骑行路线",
+          "aliases": []
+        },
+        {
+          "term": "羽毛球馆",
+          "aliases": []
+        },
+        {
+          "term": "健身计划",
+          "aliases": []
+        },
+        {
+          "term": "跑步配速",
+          "aliases": []
+        },
+        {
+          "term": "运动手表",
+          "aliases": []
+        },
+        {
+          "term": "热身运动",
+          "aliases": []
+        },
+        {
+          "term": "拉伸放松",
+          "aliases": []
+        },
+        {
+          "term": "休息日",
+          "aliases": []
+        },
+        {
+          "term": "拍照打卡",
+          "aliases": []
+        },
+        {
+          "term": "修图",
+          "aliases": []
+        },
+        {
+          "term": "胶片相机",
+          "aliases": []
+        },
+        {
+          "term": "桌游聚会",
+          "aliases": []
+        }
+      ],
+      "version": "2026.09.05-1",
+      "reviewedAt": "2026-09-05",
+      "upstreamDate": "2026-08-31T09:44:46Z",
+      "sourceUrl": "https://github.com/iDvel/rime-ice/tree/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts",
+      "revision": "fbb516b2786e4d5444383706d13c31c2e4d10c08",
+      "license": "GPL-3.0 (Rime Ice; original source credits retained)",
+      "sources": [
+        {
+          "path": "cn_dicts/base.dict.yaml",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/cn_dicts/base.dict.yaml"
+          ],
+          "bytes": 16620279,
+          "sha256": "6c594bbd03425600aa36894b713f3d268bd2a11099833a312160249e0a3f0082"
+        },
+        {
+          "path": "LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/iDvel/rime-ice/fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE",
+            "https://cdn.jsdelivr.net/gh/iDvel/rime-ice@fbb516b2786e4d5444383706d13c31c2e4d10c08/LICENSE"
+          ],
+          "bytes": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        }
+      ],
+      "bytes": 16655428,
+      "termCount": 1041,
+      "termsSha256": "378fef91c8911f3e8f3a3cb03edb2b516124cbbc51fc0f44109468315bad7fb3"
+    },
+    {
+      "id": "ai-models",
+      "name": "AI 模型与智能体",
+      "category": "AI 创作",
+      "icon": "brain-circuit",
+      "summary": "大模型、智能体、检索增强与推理",
+      "files": [
+        "dictionaries/data-science/src/data-science-models.txt",
+        "dictionaries/data-science/src/data-science-terms.txt",
+        "dictionaries/data-science/src/data-science-tools.txt"
+      ],
+      "references": [
+        "https://github.com/QwenLM/Qwen3",
+        "https://github.com/deepseek-ai/DeepSeek-V3",
+        "https://modelcontextprotocol.io/"
+      ],
+      "additions": [
+        {
+          "term": "Codex",
+          "aliases": [
+            "code x"
+          ]
+        },
+        {
+          "term": "ChatGPT",
+          "aliases": [
+            "chat gpt"
+          ]
+        },
+        {
+          "term": "DeepSeek",
+          "aliases": [
+            "deep seek"
+          ]
+        },
+        {
+          "term": "Qwen3",
+          "aliases": [
+            "qwen 3"
+          ]
+        },
+        {
+          "term": "Qwen",
+          "aliases": []
+        },
+        {
+          "term": "Claude",
+          "aliases": []
+        },
+        {
+          "term": "Gemini",
+          "aliases": []
+        },
+        {
+          "term": "Ollama",
+          "aliases": [
+            "欧拉玛"
+          ]
+        },
+        {
+          "term": "llama.cpp",
+          "aliases": [
+            "llama cpp"
+          ]
+        },
+        {
+          "term": "MCP",
+          "aliases": [
+            "m c p"
+          ]
+        },
+        {
+          "term": "RAG",
+          "aliases": [
+            "r a g"
+          ]
+        },
+        {
+          "term": "Agent",
+          "aliases": []
+        },
+        {
+          "term": "Skill",
+          "aliases": []
+        },
+        {
+          "term": "Embedding",
+          "aliases": []
+        },
+        {
+          "term": "Transformer",
+          "aliases": []
+        },
+        {
+          "term": "Token",
+          "aliases": []
+        },
+        {
+          "term": "GGUF",
+          "aliases": [
+            "g g u f"
+          ]
+        },
+        {
+          "term": "Function Calling",
+          "aliases": []
+        },
+        {
+          "term": "Tool Calling",
+          "aliases": []
+        },
+        {
+          "term": "上下文窗口",
+          "aliases": []
+        },
+        {
+          "term": "检索增强生成",
+          "aliases": []
+        },
+        {
+          "term": "多模态",
+          "aliases": []
+        },
+        {
+          "term": "推理模型",
+          "aliases": []
+        },
+        {
+          "term": "量化",
+          "aliases": []
+        },
+        {
+          "term": "智能体",
+          "aliases": []
+        },
+        {
+          "term": "工具调用",
+          "aliases": []
+        },
+        {
+          "term": "向量数据库",
+          "aliases": []
+        },
+        {
+          "term": "系统提示词",
+          "aliases": []
+        },
+        {
+          "term": "知识蒸馏",
+          "aliases": []
+        },
+        {
+          "term": "模型上下文协议",
+          "aliases": []
+        }
+      ],
+      "version": "2026.09.05-1",
+      "reviewedAt": "2026-09-05",
+      "upstreamDate": "2026-09-04T15:05:09Z",
+      "sourceUrl": "https://github.com/streetsidesoftware/cspell-dicts/tree/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries",
+      "revision": "033bb8b22f544b81f16e27c696aeadd0da431509",
+      "license": "MIT (selected CSpell dictionaries)",
+      "sources": [
+        {
+          "path": "dictionaries/data-science/src/data-science-models.txt",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/data-science/src/data-science-models.txt",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/data-science/src/data-science-models.txt"
+          ],
+          "bytes": 68,
+          "sha256": "7945d134c60a190c896ea018a372eed4a4d36f690126c9a5ab5349c07a18e615"
+        },
+        {
+          "path": "dictionaries/data-science/src/data-science-terms.txt",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/data-science/src/data-science-terms.txt",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/data-science/src/data-science-terms.txt"
+          ],
+          "bytes": 2742,
+          "sha256": "f7a4ffc2a5d20524efa987123b52cdf3c647b276d332ca4a93dde0a55f3da1c3"
+        },
+        {
+          "path": "dictionaries/data-science/src/data-science-tools.txt",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/data-science/src/data-science-tools.txt",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/data-science/src/data-science-tools.txt"
+          ],
+          "bytes": 98,
+          "sha256": "d2d53ffbb2d9ec6a0eea0b7f8f371447802cfd7564337f73aac555ae6203578f"
+        },
+        {
+          "path": "dictionaries/data-science/LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/data-science/LICENSE",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/data-science/LICENSE"
+          ],
+          "bytes": 1124,
+          "sha256": "d18417f134ceef7cb812ce51315476312217745d6cfc116dc00659480b638553"
+        }
+      ],
+      "bytes": 4032,
+      "termCount": 334,
+      "termsSha256": "c401320451cedbc19d965e8804ec42de795e35f6ceb4bba2dd8c1639051d8dcc"
+    },
+    {
+      "id": "image-video",
+      "name": "生图与视频",
+      "category": "AI 创作",
+      "icon": "image",
+      "summary": "ComfyUI、扩散模型、图像编辑与视频生成",
+      "files": [
+        "dictionaries/software-terms/src/software-terms.txt"
+      ],
+      "filter": "image|pixel|render|shader|frame|video|graphic|diffus|opencv|opengl|gltf",
+      "references": [
+        "https://github.com/Comfy-Org/ComfyUI",
+        "https://github.com/black-forest-labs/flux",
+        "https://github.com/Wan-Video/Wan2.2"
+      ],
+      "additions": [
+        {
+          "term": "ComfyUI",
+          "aliases": [
+            "comfy ui",
+            "康菲UI",
+            "康菲 UI"
+          ]
+        },
+        {
+          "term": "FLUX.2",
+          "aliases": [
+            "flux 2"
+          ]
+        },
+        {
+          "term": "FLUX",
+          "aliases": []
+        },
+        {
+          "term": "Qwen Image",
+          "aliases": [
+            "qwenimage"
+          ]
+        },
+        {
+          "term": "Qwen Image Edit",
+          "aliases": []
+        },
+        {
+          "term": "Z-Image",
+          "aliases": [
+            "z image"
+          ]
+        },
+        {
+          "term": "Stable Diffusion",
+          "aliases": []
+        },
+        {
+          "term": "SDXL",
+          "aliases": [
+            "s d x l"
+          ]
+        },
+        {
+          "term": "LoRA",
+          "aliases": [
+            "low ra"
+          ]
+        },
+        {
+          "term": "ControlNet",
+          "aliases": [
+            "control net"
+          ]
+        },
+        {
+          "term": "IP-Adapter",
+          "aliases": [
+            "ip adapter"
+          ]
+        },
+        {
+          "term": "VAE",
+          "aliases": [
+            "v a e"
+          ]
+        },
+        {
+          "term": "KSampler",
+          "aliases": [
+            "k sampler"
+          ]
+        },
+        {
+          "term": "Wan 2.2",
+          "aliases": []
+        },
+        {
+          "term": "HunyuanVideo",
+          "aliases": []
+        },
+        {
+          "term": "LTX-Video",
+          "aliases": []
+        },
+        {
+          "term": "Seedance",
+          "aliases": []
+        },
+        {
+          "term": "Nano Banana",
+          "aliases": []
+        },
+        {
+          "term": "AnimateDiff",
+          "aliases": []
+        },
+        {
+          "term": "Checkpoint",
+          "aliases": []
+        },
+        {
+          "term": "CLIP",
+          "aliases": []
+        },
+        {
+          "term": "潜空间",
+          "aliases": []
+        },
+        {
+          "term": "采样器",
+          "aliases": []
+        },
+        {
+          "term": "降噪强度",
+          "aliases": []
+        },
+        {
+          "term": "提示词权重",
+          "aliases": []
+        },
+        {
+          "term": "负面提示词",
+          "aliases": []
+        },
+        {
+          "term": "文生图",
+          "aliases": []
+        },
+        {
+          "term": "图生图",
+          "aliases": []
+        },
+        {
+          "term": "图生视频",
+          "aliases": []
+        },
+        {
+          "term": "局部重绘",
+          "aliases": []
+        },
+        {
+          "term": "工作流节点",
+          "aliases": []
+        }
+      ],
+      "version": "2026.09.05-1",
+      "reviewedAt": "2026-09-05",
+      "upstreamDate": "2026-09-04T15:05:09Z",
+      "sourceUrl": "https://github.com/streetsidesoftware/cspell-dicts/tree/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries",
+      "revision": "033bb8b22f544b81f16e27c696aeadd0da431509",
+      "license": "MIT (selected CSpell dictionaries)",
+      "sources": [
+        {
+          "path": "dictionaries/software-terms/src/software-terms.txt",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/src/software-terms.txt",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/src/software-terms.txt"
+          ],
+          "bytes": 22584,
+          "sha256": "252f97605c6dc499e93be91268e75b3d7a96c2b1d0bf015f52a123ee5b3ff40d"
+        },
+        {
+          "path": "dictionaries/software-terms/LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/LICENSE",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/LICENSE"
+          ],
+          "bytes": 1124,
+          "sha256": "6245ecd81789d113a600fa0e4f5f503e6d1b4f425860f6047dc945560dfcf13c"
+        }
+      ],
+      "bytes": 23708,
+      "termCount": 48,
+      "termsSha256": "b335ad9260ad3fa4defb003b4995159a8d80007e0bb5f27362961fdc284d99c9"
+    },
+    {
+      "id": "web-development",
+      "name": "前端与全栈",
+      "category": "开发",
+      "icon": "code-2",
+      "summary": "网页框架、接口、数据库与桌面开发",
+      "files": [
+        "dictionaries/fullstack/src/fullstack.txt",
+        "dictionaries/fullstack/src/tools-and-services.txt"
+      ],
+      "references": [
+        "https://react.dev/",
+        "https://vuejs.org/",
+        "https://www.electronjs.org/"
+      ],
+      "additions": [
+        {
+          "term": "TypeScript",
+          "aliases": [
+            "type script"
+          ]
+        },
+        {
+          "term": "JavaScript",
+          "aliases": [
+            "java script"
+          ]
+        },
+        {
+          "term": "React",
+          "aliases": []
+        },
+        {
+          "term": "Vue",
+          "aliases": []
+        },
+        {
+          "term": "Next.js",
+          "aliases": [
+            "next js"
+          ]
+        },
+        {
+          "term": "Node.js",
+          "aliases": [
+            "node js"
+          ]
+        },
+        {
+          "term": "Electron",
+          "aliases": []
+        },
+        {
+          "term": "Vite",
+          "aliases": []
+        },
+        {
+          "term": "Tailwind CSS",
+          "aliases": [
+            "tailwindcss"
+          ]
+        },
+        {
+          "term": "FastAPI",
+          "aliases": [
+            "fast api"
+          ]
+        },
+        {
+          "term": "PostgreSQL",
+          "aliases": [
+            "postgre sql"
+          ]
+        },
+        {
+          "term": "SQLite",
+          "aliases": [
+            "sql lite"
+          ]
+        },
+        {
+          "term": "WebSocket",
+          "aliases": [
+            "web socket"
+          ]
+        },
+        {
+          "term": "REST API",
+          "aliases": []
+        },
+        {
+          "term": "JSON",
+          "aliases": [
+            "j s o n"
+          ]
+        },
+        {
+          "term": "HTML",
+          "aliases": [
+            "h t m l"
+          ]
+        },
+        {
+          "term": "CSS",
+          "aliases": [
+            "c s s"
+          ]
+        },
+        {
+          "term": "前端",
+          "aliases": []
+        },
+        {
+          "term": "后端",
+          "aliases": []
+        },
+        {
+          "term": "全栈",
+          "aliases": []
+        },
+        {
+          "term": "组件",
+          "aliases": []
+        },
+        {
+          "term": "状态管理",
+          "aliases": []
+        },
+        {
+          "term": "跨域",
+          "aliases": []
+        },
+        {
+          "term": "服务端渲染",
+          "aliases": []
+        },
+        {
+          "term": "接口鉴权",
+          "aliases": []
+        },
+        {
+          "term": "依赖注入",
+          "aliases": []
+        },
+        {
+          "term": "单元测试",
+          "aliases": []
+        },
+        {
+          "term": "端到端测试",
+          "aliases": []
+        }
+      ],
+      "version": "2026.09.05-1",
+      "reviewedAt": "2026-09-05",
+      "upstreamDate": "2026-09-04T15:05:09Z",
+      "sourceUrl": "https://github.com/streetsidesoftware/cspell-dicts/tree/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries",
+      "revision": "033bb8b22f544b81f16e27c696aeadd0da431509",
+      "license": "MIT (selected CSpell dictionaries)",
+      "sources": [
+        {
+          "path": "dictionaries/fullstack/src/fullstack.txt",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/fullstack/src/fullstack.txt",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/fullstack/src/fullstack.txt"
+          ],
+          "bytes": 4495,
+          "sha256": "ec10f0ae2513b9e749e42929dfdade6e13bd2f66fb784dbd83c7798e329cba2e"
+        },
+        {
+          "path": "dictionaries/fullstack/src/tools-and-services.txt",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/fullstack/src/tools-and-services.txt",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/fullstack/src/tools-and-services.txt"
+          ],
+          "bytes": 77,
+          "sha256": "126a6cb7e906e9d4a0551079a36802b907aca873c9d1e591da1c102847c1c004"
+        },
+        {
+          "path": "dictionaries/fullstack/LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/fullstack/LICENSE",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/fullstack/LICENSE"
+          ],
+          "bytes": 1124,
+          "sha256": "6245ecd81789d113a600fa0e4f5f503e6d1b4f425860f6047dc945560dfcf13c"
+        }
+      ],
+      "bytes": 5696,
+      "termCount": 521,
+      "termsSha256": "759f75da5878c28b99504904f5afed228524fb2c049cdc76ef1ff91b079b470a"
+    },
+    {
+      "id": "cloud-devops",
+      "name": "云端与容器",
+      "category": "开发",
+      "icon": "container",
+      "summary": "Docker、网络协议、部署与持续集成",
+      "files": [
+        "dictionaries/docker/src/docker-words.txt",
+        "dictionaries/software-terms/src/network-protocols.txt",
+        "dictionaries/software-terms/src/computing-acronyms.txt"
+      ],
+      "references": [
+        "https://docs.docker.com/",
+        "https://kubernetes.io/"
+      ],
+      "additions": [
+        {
+          "term": "Docker",
+          "aliases": []
+        },
+        {
+          "term": "Docker Compose",
+          "aliases": []
+        },
+        {
+          "term": "Kubernetes",
+          "aliases": [
+            "kubernets"
+          ]
+        },
+        {
+          "term": "K8s",
+          "aliases": [
+            "k 8 s"
+          ]
+        },
+        {
+          "term": "Nginx",
+          "aliases": []
+        },
+        {
+          "term": "GitHub Actions",
+          "aliases": [
+            "git hub actions"
+          ]
+        },
+        {
+          "term": "CI/CD",
+          "aliases": []
+        },
+        {
+          "term": "HTTPS",
+          "aliases": [
+            "h t t p s"
+          ]
+        },
+        {
+          "term": "SSH",
+          "aliases": [
+            "s s h"
+          ]
+        },
+        {
+          "term": "DNS",
+          "aliases": [
+            "d n s"
+          ]
+        },
+        {
+          "term": "TCP",
+          "aliases": [
+            "t c p"
+          ]
+        },
+        {
+          "term": "UDP",
+          "aliases": [
+            "u d p"
+          ]
+        },
+        {
+          "term": "TLS",
+          "aliases": [
+            "t l s"
+          ]
+        },
+        {
+          "term": "容器镜像",
+          "aliases": []
+        },
+        {
+          "term": "反向代理",
+          "aliases": []
+        },
+        {
+          "term": "负载均衡",
+          "aliases": []
+        },
+        {
+          "term": "环境变量",
+          "aliases": []
+        },
+        {
+          "term": "持续集成",
+          "aliases": []
+        },
+        {
+          "term": "持续部署",
+          "aliases": []
+        },
+        {
+          "term": "端口映射",
+          "aliases": []
+        },
+        {
+          "term": "访问令牌",
+          "aliases": []
+        },
+        {
+          "term": "服务发现",
+          "aliases": []
+        }
+      ],
+      "version": "2026.09.05-1",
+      "reviewedAt": "2026-09-05",
+      "upstreamDate": "2026-09-04T15:05:09Z",
+      "sourceUrl": "https://github.com/streetsidesoftware/cspell-dicts/tree/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries",
+      "revision": "033bb8b22f544b81f16e27c696aeadd0da431509",
+      "license": "MIT (selected CSpell dictionaries)",
+      "sources": [
+        {
+          "path": "dictionaries/docker/src/docker-words.txt",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/docker/src/docker-words.txt",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/docker/src/docker-words.txt"
+          ],
+          "bytes": 562,
+          "sha256": "99b9b6c56fb58d221b6df6a14e3ffd7cc440ad5dee7c16161751cf9dc7888371"
+        },
+        {
+          "path": "dictionaries/software-terms/src/network-protocols.txt",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/src/network-protocols.txt",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/src/network-protocols.txt"
+          ],
+          "bytes": 356,
+          "sha256": "b2b8f0f0cb21dce4b6c26ed8b044dc99b1ebae5e95e85bfff520265e8874f0eb"
+        },
+        {
+          "path": "dictionaries/software-terms/src/computing-acronyms.txt",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/src/computing-acronyms.txt",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/src/computing-acronyms.txt"
+          ],
+          "bytes": 1380,
+          "sha256": "5ad1c671d8f9212b6f5c1c169f19f21e480c98b34a763f9f6ed0995ad6d63ff3"
+        },
+        {
+          "path": "dictionaries/docker/LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/docker/LICENSE",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/docker/LICENSE"
+          ],
+          "bytes": 1124,
+          "sha256": "3acd0dea71b25dd71ce4e579244d319840170c16431f6aa42d58dc9dd1d706f4"
+        },
+        {
+          "path": "dictionaries/software-terms/LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/LICENSE",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/LICENSE"
+          ],
+          "bytes": 1124,
+          "sha256": "6245ecd81789d113a600fa0e4f5f503e6d1b4f425860f6047dc945560dfcf13c"
+        }
+      ],
+      "bytes": 4546,
+      "termCount": 254,
+      "termsSha256": "8c078664864f95e33ece8d8b50d61b8a742c31573ddd064587489756ccb263a2"
+    },
+    {
+      "id": "speech-audio",
+      "name": "语音与音频",
+      "category": "AI 创作",
+      "icon": "audio-lines",
+      "summary": "本地听写、音频格式、转写与混音",
+      "files": [
+        "dictionaries/software-terms/src/software-terms.txt"
+      ],
+      "filter": "audio|codec|ffmpeg|sample|wave|sound|speech|voice|bitrate|opus|vorbis|flac|midi|pcm",
+      "references": [
+        "https://github.com/ggml-org/whisper.cpp",
+        "https://github.com/modelscope/FunASR",
+        "https://github.com/FunAudioLLM/SenseVoice",
+        "https://ffmpeg.org/"
+      ],
+      "additions": [
+        {
+          "term": "FunASR",
+          "aliases": [
+            "fun asr"
+          ]
+        },
+        {
+          "term": "SenseVoice",
+          "aliases": [
+            "sense voice"
+          ]
+        },
+        {
+          "term": "Paraformer",
+          "aliases": [
+            "para former"
+          ]
+        },
+        {
+          "term": "sherpa-onnx",
+          "aliases": [
+            "sherpa onnx"
+          ]
+        },
+        {
+          "term": "Whisper",
+          "aliases": []
+        },
+        {
+          "term": "whisper.cpp",
+          "aliases": [
+            "whisper cpp"
+          ]
+        },
+        {
+          "term": "FFmpeg",
+          "aliases": [
+            "ff mpeg"
+          ]
+        },
+        {
+          "term": "ASR",
+          "aliases": [
+            "a s r"
+          ]
+        },
+        {
+          "term": "TTS",
+          "aliases": [
+            "t t s"
+          ]
+        },
+        {
+          "term": "VAD",
+          "aliases": [
+            "v a d"
+          ]
+        },
+        {
+          "term": "PCM",
+          "aliases": [
+            "p c m"
+          ]
+        },
+        {
+          "term": "WAV",
+          "aliases": [
+            "w a v"
+          ]
+        },
+        {
+          "term": "FLAC",
+          "aliases": []
+        },
+        {
+          "term": "Opus",
+          "aliases": []
+        },
+        {
+          "term": "MIDI",
+          "aliases": [
+            "m i d i"
+          ]
+        },
+        {
+          "term": "DAW",
+          "aliases": [
+            "d a w"
+          ]
+        },
+        {
+          "term": "采样率",
+          "aliases": []
+        },
+        {
+          "term": "位深",
+          "aliases": []
+        },
+        {
+          "term": "声道",
+          "aliases": []
+        },
+        {
+          "term": "回声消除",
+          "aliases": []
+        },
+        {
+          "term": "语音活动检测",
+          "aliases": []
+        },
+        {
+          "term": "流式识别",
+          "aliases": []
+        },
+        {
+          "term": "端点检测",
+          "aliases": []
+        },
+        {
+          "term": "实时率",
+          "aliases": []
+        },
+        {
+          "term": "音轨",
+          "aliases": []
+        },
+        {
+          "term": "混音",
+          "aliases": []
+        },
+        {
+          "term": "压缩器",
+          "aliases": []
+        },
+        {
+          "term": "均衡器",
+          "aliases": []
+        },
+        {
+          "term": "母带",
+          "aliases": []
+        },
+        {
+          "term": "降噪",
+          "aliases": []
+        }
+      ],
+      "version": "2026.09.05-1",
+      "reviewedAt": "2026-09-05",
+      "upstreamDate": "2026-09-04T15:05:09Z",
+      "sourceUrl": "https://github.com/streetsidesoftware/cspell-dicts/tree/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries",
+      "revision": "033bb8b22f544b81f16e27c696aeadd0da431509",
+      "license": "MIT (selected CSpell dictionaries)",
+      "sources": [
+        {
+          "path": "dictionaries/software-terms/src/software-terms.txt",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/src/software-terms.txt",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/src/software-terms.txt"
+          ],
+          "bytes": 22584,
+          "sha256": "252f97605c6dc499e93be91268e75b3d7a96c2b1d0bf015f52a123ee5b3ff40d"
+        },
+        {
+          "path": "dictionaries/software-terms/LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/LICENSE",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/LICENSE"
+          ],
+          "bytes": 1124,
+          "sha256": "6245ecd81789d113a600fa0e4f5f503e6d1b4f425860f6047dc945560dfcf13c"
+        }
+      ],
+      "bytes": 23708,
+      "termCount": 39,
+      "termsSha256": "29d2b6164643635611902be7fff3485620524c34ca1a371e1405189d64dc4eac"
+    },
+    {
+      "id": "game-3d",
+      "name": "游戏与三维",
+      "category": "创作",
+      "icon": "gamepad-2",
+      "summary": "游戏开发、渲染、三维资产与引擎",
+      "files": [
+        "dictionaries/gaming-terms/src/game-development.txt",
+        "dictionaries/gaming-terms/src/gaming-terms.txt",
+        "dictionaries/gaming-terms/src/godot.txt",
+        "dictionaries/gaming-terms/src/unity.txt"
+      ],
+      "references": [
+        "https://godotengine.org/",
+        "https://www.blender.org/",
+        "https://threejs.org/"
+      ],
+      "additions": [
+        {
+          "term": "Godot",
+          "aliases": []
+        },
+        {
+          "term": "Unity",
+          "aliases": []
+        },
+        {
+          "term": "Unreal Engine",
+          "aliases": []
+        },
+        {
+          "term": "Blender",
+          "aliases": []
+        },
+        {
+          "term": "Three.js",
+          "aliases": [
+            "three js"
+          ]
+        },
+        {
+          "term": "WebGL",
+          "aliases": [
+            "web gl"
+          ]
+        },
+        {
+          "term": "WebGPU",
+          "aliases": [
+            "web gpu"
+          ]
+        },
+        {
+          "term": "glTF",
+          "aliases": []
+        },
+        {
+          "term": "GLB",
+          "aliases": [
+            "g l b"
+          ]
+        },
+        {
+          "term": "PBR",
+          "aliases": [
+            "p b r"
+          ]
+        },
+        {
+          "term": "Shader",
+          "aliases": []
+        },
+        {
+          "term": "Mesh",
+          "aliases": []
+        },
+        {
+          "term": "UV",
+          "aliases": []
+        },
+        {
+          "term": "法线贴图",
+          "aliases": []
+        },
+        {
+          "term": "骨骼动画",
+          "aliases": []
+        },
+        {
+          "term": "物理引擎",
+          "aliases": []
+        },
+        {
+          "term": "碰撞检测",
+          "aliases": []
+        },
+        {
+          "term": "光线追踪",
+          "aliases": []
+        },
+        {
+          "term": "材质",
+          "aliases": []
+        },
+        {
+          "term": "纹理",
+          "aliases": []
+        },
+        {
+          "term": "着色器",
+          "aliases": []
+        },
+        {
+          "term": "帧率",
+          "aliases": []
+        },
+        {
+          "term": "粒子系统",
+          "aliases": []
+        },
+        {
+          "term": "场景树",
+          "aliases": []
+        }
+      ],
+      "version": "2026.09.05-1",
+      "reviewedAt": "2026-09-05",
+      "upstreamDate": "2026-09-04T15:05:09Z",
+      "sourceUrl": "https://github.com/streetsidesoftware/cspell-dicts/tree/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries",
+      "revision": "033bb8b22f544b81f16e27c696aeadd0da431509",
+      "license": "MIT (selected CSpell dictionaries)",
+      "sources": [
+        {
+          "path": "dictionaries/gaming-terms/src/game-development.txt",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/gaming-terms/src/game-development.txt",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/gaming-terms/src/game-development.txt"
+          ],
+          "bytes": 750,
+          "sha256": "6603b4deeb25890eff891298cfe2e13b9456ea81dddd5c9afd91c1322de24ab1"
+        },
+        {
+          "path": "dictionaries/gaming-terms/src/gaming-terms.txt",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/gaming-terms/src/gaming-terms.txt",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/gaming-terms/src/gaming-terms.txt"
+          ],
+          "bytes": 363,
+          "sha256": "6a96c654bf45e83cdadf320083c4b248c22dc6978b31b47476c1c1d6635e6b02"
+        },
+        {
+          "path": "dictionaries/gaming-terms/src/godot.txt",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/gaming-terms/src/godot.txt",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/gaming-terms/src/godot.txt"
+          ],
+          "bytes": 258,
+          "sha256": "79598a33ae1355b582304fe63b46849c2ef47adedb9e5df2a12e22d1da5f096f"
+        },
+        {
+          "path": "dictionaries/gaming-terms/src/unity.txt",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/gaming-terms/src/unity.txt",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/gaming-terms/src/unity.txt"
+          ],
+          "bytes": 285,
+          "sha256": "5f8a3982270681115699841998c4859d2327763a85212a705770beaf402b5dbc"
+        },
+        {
+          "path": "dictionaries/gaming-terms/LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/gaming-terms/LICENSE",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/gaming-terms/LICENSE"
+          ],
+          "bytes": 1124,
+          "sha256": "d18417f134ceef7cb812ce51315476312217745d6cfc116dc00659480b638553"
+        }
+      ],
+      "bytes": 2780,
+      "termCount": 159,
+      "termsSha256": "d6e0c7ae9775a5c8640fa7a2683771a7931ef7dc760cf17fb6fb81e2078cf061"
+    },
+    {
+      "id": "productivity",
+      "name": "软件与效率工具",
+      "category": "办公",
+      "icon": "notebook-pen",
+      "summary": "知识库、编辑器、协作与桌面工具",
+      "files": [
+        "dictionaries/software-terms/src/software-tools.txt"
+      ],
+      "references": [
+        "https://obsidian.md/",
+        "https://code.visualstudio.com/",
+        "https://github.com/iDvel/rime-ice"
+      ],
+      "additions": [
+        {
+          "term": "Obsidian",
+          "aliases": [
+            "奥比西安"
+          ]
+        },
+        {
+          "term": "Notion",
+          "aliases": []
+        },
+        {
+          "term": "VS Code",
+          "aliases": [
+            "vs code"
+          ]
+        },
+        {
+          "term": "GitHub",
+          "aliases": [
+            "git hub"
+          ]
+        },
+        {
+          "term": "GitLab",
+          "aliases": [
+            "git lab"
+          ]
+        },
+        {
+          "term": "Cursor",
+          "aliases": []
+        },
+        {
+          "term": "Markdown",
+          "aliases": [
+            "mark down"
+          ]
+        },
+        {
+          "term": "PowerShell",
+          "aliases": [
+            "power shell"
+          ]
+        },
+        {
+          "term": "Windows",
+          "aliases": []
+        },
+        {
+          "term": "Rime",
+          "aliases": []
+        },
+        {
+          "term": "Raycast",
+          "aliases": []
+        },
+        {
+          "term": "Zotero",
+          "aliases": []
+        },
+        {
+          "term": "Logseq",
+          "aliases": []
+        },
+        {
+          "term": "双向链接",
+          "aliases": []
+        },
+        {
+          "term": "反向链接",
+          "aliases": []
+        },
+        {
+          "term": "知识图谱",
+          "aliases": []
+        },
+        {
+          "term": "卡片笔记",
+          "aliases": []
+        },
+        {
+          "term": "每日笔记",
+          "aliases": []
+        },
+        {
+          "term": "悬浮窗",
+          "aliases": []
+        },
+        {
+          "term": "快捷键",
+          "aliases": []
+        },
+        {
+          "term": "剪贴板",
+          "aliases": []
+        },
+        {
+          "term": "系统托盘",
+          "aliases": []
+        },
+        {
+          "term": "插件",
+          "aliases": []
+        },
+        {
+          "term": "工作区",
+          "aliases": []
+        }
+      ],
+      "version": "2026.09.05-1",
+      "reviewedAt": "2026-09-05",
+      "upstreamDate": "2026-09-04T15:05:09Z",
+      "sourceUrl": "https://github.com/streetsidesoftware/cspell-dicts/tree/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries",
+      "revision": "033bb8b22f544b81f16e27c696aeadd0da431509",
+      "license": "MIT (selected CSpell dictionaries)",
+      "sources": [
+        {
+          "path": "dictionaries/software-terms/src/software-tools.txt",
+          "kind": "words",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/src/software-tools.txt",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/src/software-tools.txt"
+          ],
+          "bytes": 6236,
+          "sha256": "494e1dd6d7d5111b45a2fa47ed87c9a94817bcae873e1dce101d1e8995f050f7"
+        },
+        {
+          "path": "dictionaries/software-terms/LICENSE",
+          "kind": "license",
+          "urls": [
+            "https://raw.githubusercontent.com/streetsidesoftware/cspell-dicts/033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/LICENSE",
+            "https://cdn.jsdelivr.net/gh/streetsidesoftware/cspell-dicts@033bb8b22f544b81f16e27c696aeadd0da431509/dictionaries/software-terms/LICENSE"
+          ],
+          "bytes": 1124,
+          "sha256": "6245ecd81789d113a600fa0e4f5f503e6d1b4f425860f6047dc945560dfcf13c"
+        }
+      ],
+      "bytes": 7360,
+      "termCount": 604,
+      "termsSha256": "2a297f5c4379e8750e7ee3f78a7b919b7ca82df06ab9de84423fa7b36cebd671"
+    }
+  ]
+}

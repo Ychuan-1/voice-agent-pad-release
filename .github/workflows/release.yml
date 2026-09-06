@@ -1,0 +1,86 @@
+name: Build Release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 180
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Build Python runtime
+        shell: pwsh
+        run: |
+          python -m venv .venv
+          .\.venv\Scripts\python.exe -m pip install --upgrade pip
+          .\.venv\Scripts\python.exe -m pip install --no-cache-dir -r requirements-streaming.txt
+
+      - name: Download speech model
+        run: .\.venv\Scripts\python.exe .\scripts\setup_streaming.py
+
+      - name: Download AI extension model
+        shell: pwsh
+        run: .\scripts\setup-local-editor.ps1 -ModelBaseUrl https://huggingface.co
+
+      - name: Fetch license files
+        run: npm run release:licenses
+
+      - name: Verify project
+        run: npm run check
+
+      - name: Build portable packages
+        run: |
+          npm run build:portable:lite
+          npm run build:ai-extension
+
+      - name: Zip packages and checksums
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path release-out | Out-Null
+          Compress-Archive -LiteralPath "dist\VoiceAgentPad-0.2.0-beta.5-lite-win-x64" -DestinationPath "release-out\VoiceAgentPad-0.2.0-beta.5-lite-win-x64.zip" -Force
+          Compress-Archive -LiteralPath "dist\VoiceAgentPad-0.2.0-beta.5-ai-extension-win-x64" -DestinationPath "release-out\VoiceAgentPad-0.2.0-beta.5-ai-extension-win-x64.zip" -Force
+          $files = @(
+            "release-out\VoiceAgentPad-0.2.0-beta.5-lite-win-x64.zip",
+            "release-out\VoiceAgentPad-0.2.0-beta.5-ai-extension-win-x64.zip"
+          )
+          $lines = foreach ($file in $files) {
+            $hash = (Get-FileHash -LiteralPath $file -Algorithm SHA256).Hash.ToLowerInvariant()
+            "$hash  $(Split-Path -Leaf $file)"
+          }
+          $lines | Set-Content -LiteralPath "release-out\SHA256SUMS-0.2.0-beta.5.txt" -Encoding utf8
+          Copy-Item -LiteralPath "README.md" -Destination "release-out\README.md"
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v0.2.0-beta.5
+          name: Voice Agent Pad 0.2.0-beta.5
+          body_path: README.md
+          draft: false
+          prerelease: true
+          files: |
+            release-out/VoiceAgentPad-0.2.0-beta.5-lite-win-x64.zip
+            release-out/VoiceAgentPad-0.2.0-beta.5-ai-extension-win-x64.zip
+            release-out/SHA256SUMS-0.2.0-beta.5.txt
+            release-out/README.md

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Agent Pad</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main id="app" class="shell compact">
+      <section class="orb-stage" aria-label="悬浮语音按钮">
+        <button id="recordToggle" class="orb" type="button" title="点击开始/停止语音转文字">
+          <span class="orb-wave" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="orb-dot"></span>
+          <span id="orbLabel" class="orb-label">点按</span>
+        </button>
+        <div class="orb-window-controls" aria-label="窗口控制">
+          <button id="orbMinimize" class="orb-control" type="button" title="最小化隐藏">－</button>
+          <button id="orbClose" class="orb-control close" type="button" title="退出语音输入助手">×</button>
+        </div>
+        <button id="settingsToggle" class="gear" type="button" title="设置">⚙</button>
+      </section>
+
+      <section id="panel" class="panel" aria-label="语音输入面板">
+        <div class="panel-head">
+          <div>
+            <p id="statusLabel" class="status">准备就绪</p>
+            <h1>语音输入</h1>
+          </div>
+          <button id="hideButton" class="icon-button" type="button" title="收起聊天框" aria-label="收起聊天框"><i data-lucide="x"></i></button>
+        </div>
+
+        <div class="text-toolbar">
+          <div class="expression-modes" role="group" aria-label="表达模式">
+            <button type="button" data-expression="original" aria-pressed="true">原文</button>
+            <button type="button" data-expression="daily" aria-pressed="false">日常</button>
+            <button type="button" data-expression="organized" aria-pressed="false">条理</button>
+            <span id="translationModeLabel" hidden>英文译文</span>
+          </div>
+          <div class="tool-actions">
+            <button id="processTextButton" class="tool-icon" title="整理当前文字" aria-label="整理当前文字"><i data-lucide="sparkles"></i></button>
+            <button id="cancelTaskButton" class="tool-icon" title="取消录音或整理" aria-label="取消录音或整理" hidden><i data-lucide="square"></i></button>
+          </div>
+        </div>
+        <textarea id="transcript" aria-label="语音文字" placeholder=""></textarea>
+        <details id="revisionDetails" class="revision" hidden>
+          <summary>原文对照 <button id="restoreOriginalButton" class="tool-icon" type="button" title="恢复本次原文" aria-label="恢复本次原文"><i data-lucide="undo-2"></i></button></summary>
+          <div id="revisionDiff" class="revision-diff"></div>
+        </details>
+        <div id="reviewNotice" class="review-notice" role="status"></div>
+
+        <div class="panel-foot">
+          <div class="engine-group">
+            <button id="providerSwitch" class="mode-switch local" type="button" title="切换本地/云端转写">本地</button>
+            <div id="engineLabel" class="engine">本地 SenseVoice</div>
+          </div>
+          <div id="actionButtons" class="actions">
+            <button id="clearTranscriptButton" class="tool-icon" type="button" title="清除当前文字" aria-label="清除当前文字"><i data-lucide="trash-2"></i></button>
+            <button id="copyButton" class="tool-icon" type="button" title="复制" aria-label="复制"><i data-lucide="copy"></i></button>
+            <button id="pasteButton" class="primary tool-icon" type="button" title="输入到目标框" aria-label="输入到目标框"><i data-lucide="clipboard-paste"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="settingsPanel" class="settings-panel" aria-label="设置">
+        <div class="settings-head">
+          <div>
+            <p id="settingsStatus" class="status">设置</p>
+            <h2>语音输入设置</h2>
+          </div>
+          <div class="settings-head-actions">
+            <button id="saveSettingsTop" class="primary settings-save" data-label="保存" type="button">保存</button>
+            <button id="closeSettings" class="icon-button" type="button" title="关闭">×</button>
+          </div>
+        </div>
+
+        <nav class="settings-tabs" role="tablist" aria-label="设置分类">
+          <button type="button" role="tab" data-view="general" aria-selected="true">常规</button>
+          <button type="button" role="tab" data-view="text" aria-selected="false">文字</button>
+          <button type="button" role="tab" data-view="packs" aria-selected="false">词包</button>
+          <button type="button" role="tab" data-view="history" aria-selected="false">记录</button>
+        </nav>
+        <div class="settings-body">
+          <div data-settings-view="general">
+          <label>
+            转写模式
+            <select id="provider">
+              <option value="local">本地识别</option>
+              <option value="cloud">云端 OpenAI</option>
+            </select>
+          </label>
+
+          <div class="two-col">
+            <label>
+              语言
+              <select id="language">
+                <option value="zh">中文</option>
+                <option value="en">英文</option>
+                <option value="zh-en">中英文</option>
+                <option value="zh-to-en">中文 → 英文</option>
+              </select>
+            </label>
+            <label>
+              粘贴后隐藏
+              <select id="autoHideAfterPaste">
+                <option value="false">不隐藏</option>
+                <option value="true">隐藏</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            录音触发方式
+            <select id="recordTriggerMode">
+              <option value="tap">点按切换</option>
+              <option value="hold">按住说话</option>
+            </select>
+          </label>
+
+          <label>
+            自动输入方式
+            <select id="inputMethod">
+              <option value="type">直接输入文字（防 Num 提示）</option>
+              <option value="paste">剪贴板粘贴（更快）</option>
+            </select>
+          </label>
+
+          <label class="check-row"><input id="liveExternalInput" type="checkbox">实时写入当前输入框</label>
+          <label>
+            实时写入兼容性
+            <select id="liveInputMode">
+              <option value="compatible">通用兼容</option>
+              <option value="strict">严格安全</option>
+            </select>
+          </label>
+          <label class="check-row"><input id="launchAtLogin" type="checkbox">开机自启动</label>
+
+          <label>
+            麦克风输入
+            <span class="device-row">
+              <select id="micDeviceId">
+                <option value="">系统默认麦克风</option>
+              </select>
+              <button id="refreshMics" type="button">刷新</button>
+            </span>
+          </label>
+
+          <fieldset data-provider="cloud">
+            <legend>云端 OpenAI</legend>
+            <label>
+              API Key
+              <input id="openaiApiKey" type="password" autocomplete="off" placeholder="也可以用系统环境变量 OPENAI_API_KEY">
+            </label>
+            <label>
+              模型
+              <select id="openaiModel">
+                <option value="gpt-4o-mini-transcribe">gpt-4o-mini-transcribe</option>
+                <option value="gpt-4o-transcribe">gpt-4o-transcribe</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset data-provider="local">
+            <legend>本地识别</legend>
+            <label>
+              本地引擎
+              <select id="localEngine">
+                <option value="paraformer">Paraformer 流式（推荐）</option>
+                <option value="sensevoice">SenseVoiceSmall</option>
+                <option value="whisper">Whisper（兜底）</option>
+              </select>
+            </label>
+            <div class="two-col">
+              <label>
+                Python
+                <input id="localPythonPath" type="text" placeholder="python">
+              </label>
+              <label>
+                Whisper 模型
+                <select id="localModel">
+                  <option value="tiny">tiny</option>
+                  <option value="base">base</option>
+                  <option value="small">small</option>
+                  <option value="medium">medium</option>
+                  <option value="large-v3">large-v3</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              SenseVoice 模型
+              <input id="localSenseVoiceModel" type="text" placeholder="iic/SenseVoiceSmall">
+            </label>
+            <p class="hint" data-local-engine="paraformer">完全离线 · CPU · INT8 · 模型约 226 MB</p>
+            <label>
+              设备
+              <select id="localDevice">
+                <option value="auto">自动</option>
+                <option value="cpu">CPU</option>
+                <option value="cuda">NVIDIA CUDA</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>快捷键</legend>
+            <div class="shortcut-list">
+              <label>
+                开始/停止录音
+                <span class="shortcut-row">
+                  <input id="startStopShortcut" type="text" readonly>
+                  <button class="shortcut-capture" data-shortcut="startStopShortcut" type="button">重设</button>
+                </span>
+              </label>
+              <label>
+                最小化隐藏/显示
+                <span class="shortcut-row">
+                  <input id="hideShowShortcut" type="text" readonly>
+                  <button class="shortcut-capture" data-shortcut="hideShowShortcut" type="button">重设</button>
+                </span>
+              </label>
+              <label>
+                粘贴到当前输入框
+                <span class="shortcut-row">
+                  <input id="pasteShortcut" type="text" readonly>
+                  <button class="shortcut-capture" data-shortcut="pasteShortcut" type="button">重设</button>
+                </span>
+              </label>
+            </div>
+          </fieldset>
+          <div class="two-col">
+            <label>待命方式<select id="standbyMode"><option value="fast">快速待命</option><option value="eco">节能待命</option></select></label>
+            <label>模型空闲时限（分钟）<input id="idleMinutes" type="number" min="1" max="60" value="5"></label>
+          </div>
+          <div class="resource-row"><span id="resourceStatus"></span><button id="releaseModels" class="tool-icon" type="button" title="释放空闲模型" aria-label="释放空闲模型"><i data-lucide="power"></i></button></div>
+          </div>
+
+          <div data-settings-view="text" hidden>
+            <label>默认表达<select id="expressionMode"><option value="original">原文</option><option value="daily">日常整理</option><option value="organized">条理整理</option></select></label>
+            <div class="resource-row ai-extension-row"><span id="editorStatus"></span><button id="openAppFolder" class="tool-icon" type="button" title="打开程序目录" aria-label="打开程序目录"><i data-lucide="folder-open"></i></button></div>
+            <label>
+              AI 扩展国内源链接
+              <input id="aiExtensionUrl" type="url" placeholder="https://国内源域名/.../VoiceAgentPad-ai-extension.zip">
+            </label>
+            <div class="ai-extension-actions">
+              <button id="downloadAiExtension" type="button">下载安装 AI 扩展</button>
+              <button id="installLocalAiExtension" type="button">选择本地 ZIP</button>
+              <button id="cancelAiExtension" type="button" hidden>取消</button>
+            </div>
+            <div id="aiExtensionStatus" class="engine-status"></div>
+            <label class="check-row"><input id="cleanupPreview" type="checkbox">整理后预览确认</label>
+            <label class="check-row"><input id="formatNumbers" type="checkbox">数字与单位规范化</label>
+            <label class="check-row"><input id="formatPunctuation" type="checkbox">基础句末标点</label>
+            <label class="check-row"><input id="saveDraft" type="checkbox">恢复未清除的草稿</label>
+            <label class="check-row"><input id="saveHistory" type="checkbox">保存本地语音记录</label>
+            <label>记录保留时间<select id="historyRetentionDays"><option value="0">永久保留</option><option value="7">7 天</option><option value="30">30 天</option><option value="90">90 天</option></select></label>
+          </div>
+
+          <div data-settings-view="packs" hidden>
+            <div class="pack-toolbar">
+              <input id="packSearch" type="search" aria-label="搜索词包或重点词" placeholder="搜索词包或重点词">
+              <select id="packCategory" aria-label="词包类别"><option value="all">全部类别</option><option value="daily">日常生活</option><option value="professional">专业工具</option></select>
+              <select id="packFilter" aria-label="词包筛选"><option value="all">全部词包</option><option value="installed">已下载</option><option value="enabled">已启用</option></select>
+            </div>
+            <div id="packStatus" class="pack-status" role="status" aria-live="polite"></div>
+            <div id="packList" class="pack-list"></div>
+          </div>
+          <div data-settings-view="history" hidden>
+            <div class="history-head"><h3>语音记录</h3><button id="clearHistory" class="tool-icon" type="button" title="清空记录" aria-label="清空记录"><i data-lucide="trash-2"></i></button></div>
+            <input id="historySearch" type="search" placeholder="搜索记录或原文" aria-label="搜索语音记录">
+            <div id="historyList" class="history-list"></div>
+          </div>
+
+          <div class="settings-actions">
+            <button id="saveSettings" class="primary settings-save" data-label="保存设置" type="button">保存设置</button>
+            <button id="openDataFolder" type="button">打开数据目录</button>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <script src="../node_modules/opencc-js/dist/umd/t2cn.js"></script>
+    <script src="../node_modules/lucide/dist/umd/lucide.min.js"></script>
+    <script src="./features-renderer.js"></script>
+    <script src="./packs-renderer.js"></script>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
